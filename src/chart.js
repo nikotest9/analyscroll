@@ -15,9 +15,9 @@ var id = 10,
    templateInd = "Industryfilter",
    filterData3=[];
 
-d3.csv("src/data/analyzer7.csv", function(error, data) {
+d3.csv("src/data/analyzer7.csv").then(function(data) {
 
-  d3.csv("src/data/codebook.csv", function(error, data2) {
+  d3.csv("src/data/codebook.csv").then(function(data2) {
 
     var filterData = data;
     var resultAryObj = [];

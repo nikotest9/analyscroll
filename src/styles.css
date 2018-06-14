@@ -7873,3 +7873,89 @@ select.bs-select-hidden, select.selectpicker {
   width: 100%;
   float: none;
 }
+
+
+.filler {
+  display: flex;
+  max-width: 60rem;
+  margin: 3rem auto;
+  padding-left: 2rem;
+  text-align: left;
+  color: gray;
+
+}
+
+.sectionsContainer .sections .section p.fillerp {
+  line-height:1.5;
+  font-weight: 400;
+}
+
+#scrolly-side .scrolly {
+  display: flex;
+  max-width: 60rem;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+#scrolly-side .scrolly > * {
+  flex: 1;
+}
+#scrolly-side .scrolly article {
+  padding-right: 1rem;
+  max-width: 30rem;
+}
+#scrolly-side .scrolly article .step {
+  min-height: 50vh;
+  margin-bottom: 1rem;
+
+  opacity:0.2;
+  transition: opacity 250ms ease-in-out;
+}
+#scrolly-side .scrolly article .step:last-of-type {
+  margin-bottom: 0;
+}
+#scrolly-side .scrolly article .step.is-active {
+  opacity: 1;
+}
+#scrolly-side .scrolly article .step p {
+  margin: 0;
+  padding: 1rem;
+  text-align: left;
+  line-height:1.5;
+  font-weight: 400;
+  color: gray;
+}
+#scrolly-side .scrolly article .step h2 {
+  margin: 0;
+  padding-left: 1rem;
+  text-align: left;
+  color: gray;
+}
+
+#scrolly-side .scrolly figure.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  top: 25vh;
+  left: 0;
+}
+
+#scrolly-side img {
+width:100%;
+max-width:250px;
+margin:auto;
+display:block;
+}
+
+.images {
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+  height: 0;
+  overflow: hidden;
+}
+
+.images.is-active {
+  opacity: 1;
+  height: auto;
+}

@@ -1,6 +1,9 @@
 import 'bootstrap';
 import * as d3 from 'd3';
 import './styles.scss';
+import enterView from 'enter-view';
+import Stickyfill from 'stickyfilljs';
+
 
 require('./third/TweenMax.min.js');
 require('./third/tabsjs');
@@ -11,15 +14,24 @@ require('./chart2.js');
 require('./chart3.js');
 require('./chart4.js');
 
+
+
+
+
+
+// d3.select("#trigger")
+//   .on("click", init)
+
+
 $(document).ready(function() {
 
   $(".btn").on("click", function() {
-  $(this).removeClass('activated');
+    $(this).removeClass('activated');
     $(this).addClass('activated');
   });
 
 
-    $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip()
 
 
 });
