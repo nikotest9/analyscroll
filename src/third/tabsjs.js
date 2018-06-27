@@ -1,10 +1,15 @@
+import {
+  init
+} from '../initfunction.js';
+import {
+  initialChart
+} from '../initialchart.js'
+import {
+  updateChart
+} from '../updatechart.js'
 
-import { init } from '../initfunction.js';
 
-
-let triggerHelp = 0;
-
-
+let triggerHelp = 2, triggerHelp2 = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
   if (document.querySelectorAll('.tabContainer').length && document.querySelectorAll('.sectionsContainer').length) {
@@ -15,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   app.tabs.initialize();
+
 }, false);
 
 var app = {
@@ -107,10 +113,32 @@ var app = {
       newSection.classList.add('active');
 
       var triggerId = this.id;
-      if (triggerHelp==0 & triggerId=="trigger") {
-          init()
-      triggerHelp = 1;
-    };
+
+      var triggerOff = this.getAttribute("data-trigger");
+
+
+      if (triggerHelp == 0 & triggerId == "trigger") {
+        console.log("test")
+        init();
+        initialChart();
+        var stepSelect = document.querySelector(".is-active");
+        stepSelect.classList.remove("is-active");
+        var stepSelectNew = document.querySelector(".step");
+        stepSelectNew.classList.add('is-active');
+
+        triggerHelp = 1;
+        triggerHelp2 = 0;
+      };
+
+      if (triggerOff == "triggeroff" & triggerHelp2 == 0) {
+        document.getElementById("scrollsvg").remove();
+
+        triggerHelp = 0;
+        triggerHelp2 = 1;
+
+      };
+
+
     },
     contain: function(container) {
 

@@ -26,7 +26,9 @@ d3.csv("src/data/analyzer7.csv").then(function(data) {
 
     var chart = d3.select("#chart");
 
-    var widthHelper = parseInt(chart.style("width"));
+    var sectionWidth = d3.select(".sectionsContainer");
+
+    var widthHelper = (parseInt(sectionWidth.style("width"))>800) ? 700 : parseInt(sectionWidth.style("width")) - 100;
 
     var margin = {
         top: widthHelper > 380 ? 20 : 50,

@@ -3,35 +3,56 @@ import * as d3 from 'd3';
 import './styles.scss';
 import enterView from 'enter-view';
 import Stickyfill from 'stickyfilljs';
+import { init } from './initfunction.js';
+import { initialChart } from './initialchart.js'
+let vendor = "Phocas";
+let peerGroupInit="Americas-focused vendors";
 
+import {
+  updateSelect
+} from './updateselect.js';
 
 require('./third/TweenMax.min.js');
 require('./third/tabsjs');
-require('./styles.css');
+
 require('./third/bootstrap-select.min.js');
 require('./chart.js');
 require('./chart2.js');
-require('./chart3.js');
-require('./chart4.js');
+require('./third/bootstrap.css');
+require('./styles.css');
 
 
 
-
-
-
-// d3.select("#trigger")
-//   .on("click", init)
 
 
 $(document).ready(function() {
 
-  $(".btn").on("click", function() {
-    $(this).removeClass('activated');
-    $(this).addClass('activated');
-  });
 
+
+
+  initialChart(vendor);
+  init();
+  updateSelect(peerGroupInit);
 
   $('[data-toggle="tooltip"]').tooltip()
+
+  $(window).scroll(function () {
+             if ($(this).scrollTop() > 50) {
+                 $('#back-to-top').fadeIn();
+             } else {
+                 $('#back-to-top').fadeOut();
+             }
+         });
+
+         $('#back-to-top').click(function () {
+             $('#back-to-top').tooltip('hide');
+             $('body,html').animate({
+                 scrollTop: 0
+             }, 800);
+             return false;
+         });
+
+         $('#back-to-top').tooltip('show');
 
 
 });
