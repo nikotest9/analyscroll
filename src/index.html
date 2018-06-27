@@ -11,17 +11,17 @@
 
   <div class="navwide1">
     <div class="navwide">
-  <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+      <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
 
-      <a class="navbar-brand" href="https://bi-survey.com"><img src="./BI-Survey-Logo.png" /></a>
-    <div>
-      Licensed for Distribution
+        <a class="navbar-brand" href="https://bi-survey.com"><img src="./BI-Survey-Logo.png" /></a>
+        <div>
+          Licensed for Distribution
+        </div>
+
+
+
+      </nav>
     </div>
-
-
-
-  </nav>
-</div>
 
   </div>
 
@@ -29,19 +29,19 @@
   <div class="container2">
     <div class="header">
 
-        <div>
+      <div>
 
-          <h1  class="head1 fade-in-bottom">The BI Survey 18 Highlights Analyzer</h1>
-          <h1 class="marginHelper fade-in-bottom">for Product A</h1>
-        </div>
-        <div class="head2 fade-in-bottom2">
+        <h1 class="head1 fade-in-bottom">The BI Survey 18 Highlights Analyzer</h1>
+        <h1 class="marginHelper fade-in-bottom">for Product A</h1>
+      </div>
+      <div class="head2 fade-in-bottom2">
 
-             <a  href="https://bi-survey.com"><img class="logo" src="./imageloader/logo-01.png" alt="BI Survey Logo"></a>
-
-        </div>
-
+        <a href="https://bi-survey.com"><img class="logo" src="./imageloader/logo-01.png" alt="BI Survey Logo"></a>
 
       </div>
+
+
+    </div>
 
 
 
@@ -77,7 +77,7 @@
 
 
 
-            <p class ="centerHelp">Scroll down</p>
+            <p class="centerHelp">Scroll down</p>
 
             <i class="fa fa-angle-double-down" style="font-size:24px"></i>
 
@@ -176,11 +176,11 @@
 
               <div class="row align-items-center closer">
                 <div class="col-sm">
-                <iframe width='640' height='404' src='https://pilot.touchcast.com/embed/23558' frameborder='0' allowfullscreen> </iframe>
+                  <iframe width='640' height='404' src='https://pilot.touchcast.com/embed/23567' frameborder='0' allowfullscreen> </iframe>
                 </div>
               </div>
 
-              </div>
+            </div>
 
           </section>
 
@@ -223,26 +223,40 @@
         </div>
         <div class="section" data-section="b">
 
-          <div class="row margintop justify-content-md-center">
-            <div class="col-sm filter">
+          <section class='filler' id="filleranalyz">
+            <h2>The BI Survey Analyzer</h2>
+            <p class="fillerp">Our powerful interactive online tool, enables you to perform your own custom analysis of the survey data. <strong>This basic version</strong> allows you to analyze the results for each question in The BI Survey and filter results by region,
+              industry, company size etc. <strong><a href="https://bi-survey.com/contact-page">The premium version</a></strong> gives you access to all the product-related findings, enabling you to make customized comparisons of the BI products on your
+              shortlist across the whole set of 29 KPIs.</p>
 
-              <div>
-                <h4>Question</h4>
-              </div>
-              <div>
-                <select id="question" name="question" class="selectpicker">
+          </section>
+          <div class="containeranal">
+            <div id="analyzer" class="row margintop2 justify-content-md-center">
+
+
+              <div class="col maxWidth">
+                <div class="row margintopAnal">
+
+                <div class="filter">
+                  <div >
+                  <h4>Question</h4>
+                </div>
+                <div>
+                  <select id="question" name="question" class="selectpicker">
                   <option id="button1" value="10" class="single">Department</option>
                   <option id="button5" value="101" class="multi">Department using BI</option>
                   <option id="button2" value="24" class="single">Position</option>
                   <option id="button3" value="26" class="single">Replaced BI systems</option>
                   <option id="button4" value="102" class="multi">Reasons replacing</option>
                 </select>
+                </div>
               </div>
-              <div class="margintop">
-                <h4>Region</h4>
-              </div>
-              <div>
-                <select id="region" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>5" data-count-selected-text="All selected">
+              <div class="filter">
+                <div >
+                  <h4>Region</h4>
+                </div>
+                <div>
+                  <select id="region" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>5" data-count-selected-text="All selected">
                 <option value="Europe">Europe</option>
                 <option value="Asia and Pacific">Asia and Pacific</option>
                 <option value="North America">North America</option>
@@ -250,12 +264,14 @@
                 <option value="ROW">ROW</option>
                 <option value="Did not respond">Did not respond</option>
               </select>
-              </div>
-              <div class="margintop">
-                <h4>Industry</h4>
-              </div>
-              <div>
-                <select id="industry" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>10" data-count-selected-text="All selected">
+                </div>
+                </div>
+                <div class="filter">
+                <div>
+                  <h4>Industry</h4>
+                </div>
+                <div>
+                  <select id="industry" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>10" data-count-selected-text="All selected">
                 <option value="Manufacturing">Manufacturing</option>
                 <option value="Services">Services</option>
                 <option value="Retail/Wholesale">Retail/Wholesale</option>
@@ -268,21 +284,24 @@
                 <option value="Other">Other</option>
                 <option value="Did not respond">Did not respond</option>
               </select>
+                </div>
+                </div>
               </div>
+              </div>
+
+              <div class="col-auto">
+                <div>
+                  <h4 id="questionlong">Which department do you work in?</h4>
+                </div>
+                <div id="nid">
+                  <p>N = <span id="ncount">2347</span></p>
+                </div>
+                <div id="chart">
+
+                </div>
+              </div>
+
             </div>
-
-            <div class="col-sm maxWidth">
-              <div>
-                <h4 id="questionlong">Which department do you work in?</h4>
-              </div>
-              <div id="nid">
-                <p>N = <span id="ncount">2347</span></p>
-              </div>
-              <div id="chart">
-
-              </div>
-            </div>
-
           </div>
 
         </div>
@@ -1205,7 +1224,7 @@
   </div>
 
 
-  <footer class ="d-flex flex-column">
+  <footer class="d-flex flex-column">
     <div class="navwide2">
       <div class="disclaimer navwide">
         © 2018 BARC. All rights reserved. This publication may not be reproduced or distributed in any form without BARC's prior permission. If you are authorized to access this publication, your use of it is subject to the BARC Usage Policy posted on
