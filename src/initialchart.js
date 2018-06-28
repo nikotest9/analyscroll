@@ -1,4 +1,5 @@
 import scrollDataRaw from './data/kpis.csv';
+import {vendor, peerGroupInit, KPIInit} from './index.js';
 
 export function initialChart(vendor) {
 
@@ -20,14 +21,14 @@ export function initialChart(vendor) {
 
   var formScroll = d3.format(".1f")
 
-  var KPI = "Business benefits";
+  var KPI = KPIInit;
 
   function keys(d) {
     return d.vendor;
   }
 
   var KPIselect = KPI;
-  var peerSelect = "Americas-focused vendors"
+  var peerSelect = peerGroupInit;
 
   var scrollData2 = scrollDataRaw.filter(function(element) {
     return element.Peer == peerSelect

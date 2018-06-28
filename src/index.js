@@ -7,6 +7,9 @@ import { init } from './initfunction.js';
 import { initialChart } from './initialchart.js'
 let vendor = "Phocas";
 let peerGroupInit="Americas-focused vendors";
+var KPIInit = "Business benefits";
+
+export {vendor, peerGroupInit, KPIInit};
 
 import {
   updateSelect

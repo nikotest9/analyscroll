@@ -6,7 +6,14 @@ import {
 } from '../initialchart.js'
 import {
   updateChart
-} from '../updatechart.js'
+} from '../updatechart.js';
+import {
+  updateSelect
+} from '../updateselect.js';
+
+import {vendor, peerGroupInit} from '../index.js';
+
+
 
 
 let triggerHelp = 2, triggerHelp2 = 0;
@@ -116,11 +123,15 @@ var app = {
 
       var triggerOff = this.getAttribute("data-trigger");
 
+      if (triggerHelp == 0 & triggerId == "trigger" ) {
 
-      if (triggerHelp == 0 & triggerId == "trigger") {
+        d3.select("#buttonKPI1").selectAll("button").classed("active-button", false);
+        d3.select("#buttonKPI1").select("button").classed("active-button", true)
 
+        initialChart(vendor);
         init();
-        initialChart();
+        updateSelect(peerGroupInit);
+
         var stepSelect = document.querySelector(".is-active");
         stepSelect.classList.remove("is-active");
         var stepSelectNew = document.querySelector(".step");
@@ -135,6 +146,7 @@ var app = {
 
         triggerHelp = 0;
         triggerHelp2 = 1;
+
 
       };
 

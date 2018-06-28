@@ -10,10 +10,12 @@ import {
   updateSelect
 } from './updateselect.js';
 
+import {vendor, peerGroupInit, KPIInit} from './index.js';
+
 const container = d3.select('#scrolly-side');
 const stepSel = container.selectAll('.step');
-const imgSel = container.selectAll('.images')
-const vendor = "Phocas";
+const imgSel = container.selectAll('.images');
+
 
 
 export function init(indexBlock) {
@@ -23,8 +25,7 @@ export function init(indexBlock) {
     selector: stepSel.nodes(),
     offset: 0.5,
     enter: el => {
-
-
+      
 
         const index = +d3.select(el).attr('data-index');
         if (index == 3) {
@@ -54,6 +55,8 @@ export function init(indexBlock) {
     }
   });
 }
+
+
 
 
 d3.selectAll("#buttonKPI1").selectAll("button")

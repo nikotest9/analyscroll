@@ -184,10 +184,17 @@ a.btn:hover {
   text-decoration: none;
 }
 
-.linHigh {
-  line-height: 1.6em !important;
-  margin-top: 30px;
-  max-width: 900px;
+#linHigh {
+  line-height: 1.6em;
+  margin-top: 5rem;
+  margin-bottom:5rem;
+  font-weight: 400;
+  color:gray;
+}
+
+#linHigh a {
+  margin:0px;
+  padding:0px;
 }
 
 [data-toggle="collapse"]:after {

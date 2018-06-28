@@ -28,7 +28,7 @@ d3.csv("src/data/analyzer7.csv").then(function(data) {
 
     var sectionWidth = d3.select(".sectionsContainer");
 
-    var widthHelper = (parseInt(sectionWidth.style("width"))>850) ? 750 : parseInt(sectionWidth.style("width")) - 100;
+    var widthHelper = (parseInt(sectionWidth.style("width"))>850) ? 750 : parseInt(sectionWidth.style("width")) - 200;
 
     var margin = {
         top: widthHelper > 380 ? 20 : 50,
@@ -554,3 +554,29 @@ function shorten(arr, obj) {
   });
   return obj;
 }
+
+// function resizeWidth () {
+//
+//   var chart = d3.select("#chart");
+//
+//   var widthHelper = parseInt(document.getElementById("chart").offsetWidth);
+//
+//
+//   var margin = {
+//       top: widthHelper > 380 ? 20 : 50,
+//       left: widthHelper > 380 ? 310 : 5
+//     },
+//     width = widthHelper - margin.left - margin.right,
+//     height = 700 - margin.top - margin.bottom;
+//
+//     d3.select("#chart").selectAll("svg")
+//       .attr("width", widthHelper + margin.left + margin.right);
+//
+// }
+//
+// function timeout() {
+//   setTimeout(resizeWidth,300)
+// }
+//
+// d3.select("#nonproduct")
+//   .on("click", timeout)
