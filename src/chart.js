@@ -28,7 +28,7 @@ d3.csv("src/data/analyzer7.csv").then(function(data) {
 
     var sectionWidth = d3.select(".sectionsContainer");
 
-    var widthHelper = (parseInt(sectionWidth.style("width"))>800) ? 700 : parseInt(sectionWidth.style("width")) - 100;
+    var widthHelper = (parseInt(sectionWidth.style("width"))>850) ? 750 : parseInt(sectionWidth.style("width")) - 100;
 
     var margin = {
         top: widthHelper > 380 ? 20 : 50,
@@ -37,7 +37,8 @@ d3.csv("src/data/analyzer7.csv").then(function(data) {
         left: widthHelper > 380 ? 310 : 5
       },
       width = widthHelper - margin.left - margin.right,
-      height = widthHelper > 380 ? (700 - margin.top - margin.bottom) : (500 - margin.top - margin.bottom);
+      height = 700 - margin.top - margin.bottom,
+      height2;
 
     var form = d3.format(".0%");
 
@@ -49,6 +50,16 @@ d3.csv("src/data/analyzer7.csv").then(function(data) {
     });
 
     xScale.domain([0, maxVal]);
+
+    var answers = d3.set(resultAryObj.map(function(d) {
+      return d.answerOpt;
+    })).values();
+
+    var answersNum = answers.length;
+
+    height2 = ((answersNum + 2) * barHeight) - margin.top - margin.bottom;
+
+    height = (height2<430) ? 430 : height2;
 
     var svg = d3.select("#chart").append("svg")
       .attr("width", width + margin.left + margin.right)
@@ -114,7 +125,7 @@ d3.csv("src/data/analyzer7.csv").then(function(data) {
         return b.answerVal - a.answerVal
       });
 
-      var widthHelper = parseInt(d3.select("#chart").style("width"));
+      var widthHelper = (parseInt(sectionWidth.style("width"))>850) ? 750 : parseInt(sectionWidth.style("width")) - 100;
       var margin = {
           top: widthHelper > 380 ? 20 : 50,
           right: 35,
@@ -122,13 +133,26 @@ d3.csv("src/data/analyzer7.csv").then(function(data) {
           left: widthHelper > 380 ? 310 : 5
         },
         width = widthHelper - margin.left - margin.right,
-        height = widthHelper > 380 ? (700 - margin.top - margin.bottom) : (500 - margin.top - margin.bottom);
+        height = 700 - margin.top - margin.bottom;
 
       maxVal = d3.max(dataUpd, function(d) {
         return d.answerVal;
       });
 
       xScale.domain([0, maxVal]);
+
+      var answers = d3.set(dataUpd.map(function(d) {
+        return d.answerOpt;
+      })).values();
+
+      var answersNum = answers.length;
+
+      height2 = ((answersNum + 2) * barHeight) - margin.top - margin.bottom;
+
+      height = (height2<430) ? 430 : height2;
+
+      d3.select("#chart").selectAll("svg")
+        .attr("height", height + margin.top + margin.bottom);
 
       var answerLabelsUpdate = svg.selectAll("text.Answerlabel")
         .data(dataUpd);

@@ -118,7 +118,7 @@ var app = {
 
 
       if (triggerHelp == 0 & triggerId == "trigger") {
-        console.log("test")
+
         init();
         initialChart();
         var stepSelect = document.querySelector(".is-active");

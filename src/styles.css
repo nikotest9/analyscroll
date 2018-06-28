@@ -1270,6 +1270,7 @@ h1 {
   padding-top:4rem;
   padding-left:4rem;
   padding-right:4rem;
+  margin-bottom: 7rem;
 }
 
 #filleranalyz {
@@ -1281,6 +1282,6 @@ h1 {
   margin:0 3rem;
 }
 
-.btn-light, .btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle{
+#analyzer .btn-light, #analyzer .btn-light:not(:disabled):not(.disabled).active, #analyzer .btn-light:not(:disabled):not(.disabled):active, #analyzer .show>.btn-light.dropdown-toggle{
   background-color:white;
 }

@@ -1,7 +1,7 @@
 import 'bootstrap';
 import * as d3 from 'd3';
 import './styles.scss';
-import enterView from 'enter-view';
+import enterView from './third/enter-view.js';
 import Stickyfill from 'stickyfilljs';
 import { init } from './initfunction.js';
 import { initialChart } from './initialchart.js'
@@ -52,7 +52,7 @@ $(document).ready(function() {
              return false;
          });
 
-         $('#back-to-top').tooltip('show');
+
 
 
 });
