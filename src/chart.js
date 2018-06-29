@@ -28,7 +28,7 @@ d3.csv("src/data/analyzer7.csv").then(function(data) {
 
     var sectionWidth = d3.select(".sectionsContainer");
 
-    var widthHelper = (parseInt(sectionWidth.style("width"))>850) ? 750 : parseInt(sectionWidth.style("width")) - 200;
+    var widthHelper = (parseInt(sectionWidth.style("width"))>1000) ? 750 : parseInt(sectionWidth.style("width")) - 250;
 
     var margin = {
         top: widthHelper > 380 ? 20 : 50,
@@ -125,7 +125,7 @@ d3.csv("src/data/analyzer7.csv").then(function(data) {
         return b.answerVal - a.answerVal
       });
 
-      var widthHelper = (parseInt(sectionWidth.style("width"))>850) ? 750 : parseInt(sectionWidth.style("width")) - 100;
+      var widthHelper = (parseInt(sectionWidth.style("width"))>1000) ? 750 : parseInt(sectionWidth.style("width")) - 250;
       var margin = {
           top: widthHelper > 380 ? 20 : 50,
           right: 35,

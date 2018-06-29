@@ -111,7 +111,7 @@ export function initialChart(vendor) {
     .attr("height", yScaleScroll.bandwidth())
     .attr("fill", function(d) {
       if (d.vendor == "Peer Group Average") {
-        return "rgb(102, 102, 102)";
+        return "#aaceef";
       } else if (d.vendor == vendor) {
               return "#ff9800";
             }

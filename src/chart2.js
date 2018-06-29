@@ -70,7 +70,7 @@ function keys(d) {
     .attr("height", barHeightKPI / 2.5)
     .attr("fill", function(d) {
       if (d.vendor == "Peer Group Average") {
-        return "rgb(102, 102, 102)";
+        return "#aaceef";
       } else {
         return "#2f72b0";
       }
@@ -148,7 +148,7 @@ function keys(d) {
     barsupdateKPI
       .attr("fill", function(d) {
         if (d.vendor == "Peer Group Average") {
-          return "rgb(102, 102, 102)";
+          return "#aaceef";
         } else {
           return "#2f72b0";
         }
@@ -164,7 +164,7 @@ function keys(d) {
       .append("rect")
       .attr("fill", function(d) {
         if (d.vendor == "Peer Group Average") {
-          return "rgb(102, 102, 102)";
+          return "#aaceef";
         } else {
           return "#2f72b0";
         }

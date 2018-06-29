@@ -20,7 +20,6 @@ require('./third/tabsjs');
 
 require('./third/bootstrap-select.min.js');
 require('./chart.js');
-require('./chart2.js');
 require('./third/bootstrap.css');
 require('./styles.css');
 

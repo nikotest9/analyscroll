@@ -125,7 +125,7 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
   barsupdateKPI
     .attr("fill", function(d) {
       if (d.vendor == "Peer Group Average") {
-        return "rgb(102, 102, 102)";
+        return "#aaceef";
       } else if (d.vendor == vendor) {
               return "#ff9800";
             }
@@ -147,7 +147,7 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
     .append("rect")
     .attr("fill", function(d) {
       if (d.vendor == "Peer Group Average") {
-        return "rgb(102, 102, 102)";
+        return "#aaceef";
       } else {
         return "#2f72b0";
       }
