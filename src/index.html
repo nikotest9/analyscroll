@@ -56,7 +56,7 @@
 	      <span class="icon fa fa-bar-chart"></span>
         <span class="text">Survey Results (non-product related)</span>
         </span>
-        <span class="tab triggerTest"  data-trigger="triggeroff" data-tab="e">
+        <span class="tab triggerTest" data-trigger="triggeroff" data-tab="e">
 	      <span class="icon fa fa-info"></span>
         <span class="text">Documentation</span>
         </span>
@@ -245,26 +245,26 @@
               <div class="col maxWidth">
                 <div class="row margintopAnal">
 
-                <div class="filter">
-                  <div >
-                  <h4>Question</h4>
-                </div>
-                <div>
-                  <select id="question" name="question" class="selectpicker">
+                  <div class="filter">
+                    <div>
+                      <h4>Question</h4>
+                    </div>
+                    <div>
+                      <select id="question" name="question" class="selectpicker">
                   <option id="button1" value="10" class="single">Department</option>
                   <option id="button5" value="101" class="multi">Department using BI</option>
                   <option id="button2" value="24" class="single">Position</option>
                   <option id="button3" value="26" class="single">Replaced BI systems</option>
                   <option id="button4" value="102" class="multi">Reasons replacing</option>
                 </select>
-                </div>
-              </div>
-              <div class="filter">
-                <div >
-                  <h4>Region</h4>
-                </div>
-                <div>
-                  <select id="region" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>5" data-count-selected-text="All selected">
+                    </div>
+                  </div>
+                  <div class="filter">
+                    <div>
+                      <h4>Region</h4>
+                    </div>
+                    <div>
+                      <select id="region" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>5" data-count-selected-text="All selected">
                 <option value="Europe">Europe</option>
                 <option value="Asia and Pacific">Asia and Pacific</option>
                 <option value="North America">North America</option>
@@ -272,14 +272,14 @@
                 <option value="ROW">ROW</option>
                 <option value="Did not respond">Did not respond</option>
               </select>
-                </div>
-                </div>
-                <div class="filter">
-                <div>
-                  <h4>Industry</h4>
-                </div>
-                <div>
-                  <select id="industry" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>10" data-count-selected-text="All selected">
+                    </div>
+                  </div>
+                  <div class="filter">
+                    <div>
+                      <h4>Industry</h4>
+                    </div>
+                    <div>
+                      <select id="industry" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>10" data-count-selected-text="All selected">
                     <option value="Manufacturing">Manufacturing</option>
                     <option value="Services">Services</option>
                     <option value="Retail/Wholesale">Retail/Wholesale</option>
@@ -292,75 +292,152 @@
                     <option value="Other">Other</option>
                     <option value="Did not respond">Did not respond</option>
                  </select>
-                </div>
-                </div>
-                <div class="filter">
-                <div>
-                  <h4>Employee</h4>
-                </div>
-                <div>
-                  <select id="employee" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>10" data-count-selected-text="All selected">
+                    </div>
+                  </div>
+                  <div class="filter">
+                    <div>
+                      <h4>Employee</h4>
+                    </div>
+                    <div>
+                      <select id="employee" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>4" data-count-selected-text="All selected">
                     <option value="Less than 150">Less than 150</option>
-                    <option value="150 - 1500">150 - 1500</option>
+                    <option value="150 - 500">150 - 500</option>
+                    <option value="500 - 1500">500 - 1500</option>
                     <option value="1500 - 6000">1500 - 6000</option>
                     <option value="More than 6000">More than 6000</option>
                     <option value="Did not respond">Did not respond</option>
                  </select>
-                </div>
-                </div>
-                <div class="filter">
-                <div>
-                  <h4>IT-Business</h4>
-                </div>
-                <div>
-                  <select id="itbus" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>10" data-count-selected-text="All selected">
+                    </div>
+                  </div>
+                  <div class="filter">
+                    <div>
+                      <h4>IT-Business</h4>
+                    </div>
+                    <div>
+                      <select id="itbus" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>2" data-count-selected-text="All selected">
                     <option value="Business">Business</option>
                     <option value="IT">IT</option>
                     <option value="Did not respond">Did not respond</option>
                  </select>
-                </div>
-                </div>
-                <div class="filter">
-                <div>
-                  <h4>Revenue</h4>
-                </div>
-                <div>
-                  <select id="revenue" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>10" data-count-selected-text="All selected">
-                    <option value="Manufacturing">Manufacturing</option>
-                    <option value="Services">Services</option>
-                    <option value="Retail/Wholesale">Retail/Wholesale</option>
-                    <option value="Financial Services">Financial Services</option>
-                    <option value="IT">IT</option>
-                    <option value="Public sector and Education">Public sector and Education</option>
-                    <option value="Utilities">Utilities</option>
-                    <option value="Telecommunications">Telecommunications</option>
-                    <option value="Transport">Transport</option>
-                    <option value="Other">Other</option>
+                    </div>
+                  </div>
+                  <div class="filter">
+                    <div>
+                      <h4>Revenue</h4>
+                    </div>
+                    <div>
+                      <select id="revenue" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>4" data-count-selected-text="All selected">
+                    <option value="Less than $100m">Less than $100m</option>
+                    <option value="$100m to $1bn">$100m to $1bn</option>
+                    <option value="$1bn to $15bn">$1bn to $15bn</option>
+                    <option value="More than $15bn">More than $15bn</option>
                     <option value="Did not respond">Did not respond</option>
                  </select>
-                </div>
-                </div>
-                <div class="filter">
-                <div>
-                  <h4>Country</h4>
-                </div>
-                <div>
-                  <select id="country" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>10" data-count-selected-text="All selected">
-                    <option value="Manufacturing">Manufacturing</option>
-                    <option value="Services">Services</option>
-                    <option value="Retail/Wholesale">Retail/Wholesale</option>
-                    <option value="Financial Services">Financial Services</option>
-                    <option value="IT">IT</option>
-                    <option value="Public sector and Education">Public sector and Education</option>
-                    <option value="Utilities">Utilities</option>
-                    <option value="Telecommunications">Telecommunications</option>
-                    <option value="Transport">Transport</option>
-                    <option value="Other">Other</option>
-                    <option value="Did not respond">Did not respond</option>
+                    </div>
+                  </div>
+                  <div class="filter">
+                    <div>
+                      <h4>Country</h4>
+                    </div>
+                    <div>
+                      <select id="country" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>92" data-count-selected-text="All selected">
+                    <option value='Aland Islands'>Aland Islands</option>
+                    <option value='Algeria'>Algeria</option>
+                    <option value='American Samoa'>American Samoa</option>
+                    <option value='Andorra'>Andorra</option>
+                    <option value='Argentina'>Argentina</option>
+                    <option value='Australia'>Australia</option>
+                    <option value='Austria'>Austria</option>
+                    <option value='Belgium'>Belgium</option>
+                    <option value='Bolivia'>Bolivia</option>
+                    <option value='Brazil'>Brazil</option>
+                    <option value='Bulgaria'>Bulgaria</option>
+                    <option value='Canada'>Canada</option>
+                    <option value='Chile'>Chile</option>
+                    <option value='China'>China</option>
+                    <option value='Colombia'>Colombia</option>
+                    <option value='Cook Islands'>Cook Islands</option>
+                    <option value='Costa Rica'>Costa Rica</option>
+                    <option value='Czech Republic'>Czech Republic</option>
+                    <option value='Denmark'>Denmark</option>
+                    <option value='Ecuador'>Ecuador</option>
+                    <option value='Egypt'>Egypt</option>
+                    <option value='El Salvador'>El Salvador</option>
+                    <option value='Finland'>Finland</option>
+                    <option value='France'>France</option>
+                    <option value='French Guiana'>French Guiana</option>
+                    <option value='French Polynesia'>French Polynesia</option>
+                    <option value='Germany'>Germany</option>
+                    <option value='Gibraltar'>Gibraltar</option>
+                    <option value='Greece'>Greece</option>
+                    <option value='Guatemala'>Guatemala</option>
+                    <option value='Hong Kong'>Hong Kong</option>
+                    <option value='Hungary'>Hungary</option>
+                    <option value='Iceland'>Iceland</option>
+                    <option value='India'>India</option>
+                    <option value='Indonesia'>Indonesia</option>
+                    <option value='Ireland'>Ireland</option>
+                    <option value='Isle of Man'>Isle of Man</option>
+                    <option value='Israel'>Israel</option>
+                    <option value='Italy'>Italy</option>
+                    <option value='Japan'>Japan</option>
+                    <option value='Jordan'>Jordan</option>
+                    <option value='Kenya'>Kenya</option>
+                    <option value='Kuwait'>Kuwait</option>
+                    <option value='Latvia'>Latvia</option>
+                    <option value='Lebanon'>Lebanon</option>
+                    <option value='Liechtenstein'>Liechtenstein</option>
+                    <option value='Lithuania'>Lithuania</option>
+                    <option value='Luxembourg'>Luxembourg</option>
+                    <option value='Malaysia'>Malaysia</option>
+                    <option value='Malta'>Malta</option>
+                    <option value='Martinique'>Martinique</option>
+                    <option value='Mexico'>Mexico</option>
+                    <option value='Monaco'>Monaco</option>
+                    <option value='Morocco'>Morocco</option>
+                    <option value='Netherlands'>Netherlands</option>
+                    <option value='New Caledonia'>New Caledonia</option>
+                    <option value='New Zealand'>New Zealand</option>
+                    <option value='Nigeria'>Nigeria</option>
+                    <option value='Norway'>Norway</option>
+                    <option value='Pakistan'>Pakistan</option>
+                    <option value='Panama'>Panama</option>
+                    <option value='Peru'>Peru</option>
+                    <option value='Philippines'>Philippines</option>
+                    <option value='Poland'>Poland</option>
+                    <option value='Portugal'>Portugal</option>
+                    <option value='Puerto Rico'>Puerto Rico</option>
+                    <option value='Qatar'>Qatar</option>
+                    <option value='Republic of Korea'>Republic of Korea</option>
+                    <option value='Reunion'>Reunion</option>
+                    <option value='Romania'>Romania</option>
+                    <option value='Russian Federation'>Russian Federation</option>
+                    <option value='Saudi Arabia'>Saudi Arabia</option>
+                    <option value='Senegal'>Senegal</option>
+                    <option value='Serbia'>Serbia</option>
+                    <option value='Singapore'>Singapore</option>
+                    <option value='Slovakia'>Slovakia</option>
+                    <option value='Slovenia'>Slovenia</option>
+                    <option value='South Africa'>South Africa</option>
+                    <option value='Spain'>Spain</option>
+                    <option value='Sweden'>Sweden</option>
+                    <option value='Switzerland'>Switzerland</option>
+                    <option value='Thailand'>Thailand</option>
+                    <option value='Tunisia'>Tunisia</option>
+                    <option value='Turkey'>Turkey</option>
+                    <option value='Ukraine'>Ukraine</option>
+                    <option value='United Arab Emirates'>United Arab Emirates</option>
+                    <option value='United Kingdom'>United Kingdom</option>
+                    <option value='United States of America'>United States of America</option>
+                    <option value='United States Virgin Islands'>United States Virgin Islands</option>
+                    <option value='Uruguay'>Uruguay</option>
+                    <option value='Viet Nam'>Viet Nam</option>
+                    <option value='Zambia'>Zambia</option>
+                    <option value='Did not respond'>Did not respond</option>
                  </select>
+                    </div>
+                  </div>
                 </div>
-                </div>
-              </div>
               </div>
 
               <div class="col">
@@ -384,7 +461,8 @@
         <div class="section" data-section="e">
           <section class='filler' id="filleranalyz">
             <h2>About The BI Survey Highlights Analyzer</h2>
-            <p class="fillerp">The BI Survey Highlights Analyzer web app for Product A is an interactive tool that enables you to perform your own custom analysis of the Highlights of Product A as well as the non-product related BI Survey 18 data. The app contains results from all the questions asked in The BI Survey 18. For more information on The BI Survey methodology see <a  href="https://bi-survey.com/bi-survey-about">The BI Survey about page</a> and the following table.</p>
+            <p class="fillerp">The BI Survey Highlights Analyzer web app for Product A is an interactive tool that enables you to perform your own custom analysis of the Highlights of Product A as well as the non-product related BI Survey 18 data. The app contains results
+              from all the questions asked in The BI Survey 18. For more information on The BI Survey methodology see <a href="https://bi-survey.com/bi-survey-about">The BI Survey about page</a> and the following table.</p>
 
           </section>
 
