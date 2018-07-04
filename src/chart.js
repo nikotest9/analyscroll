@@ -209,7 +209,7 @@ d3.csv("src/data/analyzer7.csv").then(function(data) {
 
     height2 = (answersNum + 2) * barHeight - margin.top - margin.bottom;
 
-    height = height2 < 430 ? 430 : height2;
+    height = height2 < 350 ? 350 : height2;
 
     var svg = d3
       .select("#chart")
@@ -313,10 +313,12 @@ d3.csv("src/data/analyzer7.csv").then(function(data) {
 
       height2 = (answersNum + 2) * barHeight - margin.top - margin.bottom;
 
-      height = height2 < 430 ? 430 : height2;
+      height = height2 < 350 ? 350 : height2;
 
       d3.select("#chart")
         .selectAll("svg")
+        .transition()
+        .duration(350)
         .attr("height", height + margin.top + margin.bottom);
 
       var answerLabelsUpdate = svg.selectAll("text.Answerlabel").data(dataUpd);

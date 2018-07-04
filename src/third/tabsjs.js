@@ -128,7 +128,12 @@ var app = {
         d3.select("#buttonKPI1").selectAll("button").classed("active-button", false);
         d3.select("#buttonKPI1").select("button").classed("active-button", true)
 
-        initialChart(vendor);
+
+        setTimeout(function(){
+
+          initialChart(vendor)
+      
+        },600);
         init();
         updateSelect(peerGroupInit);
 

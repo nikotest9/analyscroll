@@ -6,7 +6,9 @@ var formScroll = d3.format(".1f")
 
 
 let KPIselect, updatePeer, scrollData2, scrollData;
+
 export function updateChart(index, vendor) {
+
 
   stepSel.classed('is-active', (d, i) => i === index);
 
@@ -36,7 +38,7 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
       top: widthHelperScroll > 380 ? 80 : 80,
       right: 65,
       bottom: 45,
-      left: widthHelperScroll > 380 ? 160 : 5
+      left: widthHelperScroll > 380 ? 160 : 160
     },
     widthScroll = widthHelperScroll - marginScroll.left - marginScroll.right,
     heightScroll = heightHelperScroll > 500 ? (500 - marginScroll.top - marginScroll.bottom) : (heightHelperScroll - marginScroll.top - marginScroll.bottom);
@@ -56,6 +58,8 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
       .text(newPeerDesc)
       .style("opacity", 1);
   }
+
+
 
   let scrollDataVend3 = scrollDataRaw.filter(function(element) {
     return element.Peer == updatePeer
@@ -88,8 +92,6 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
   }
 
 
-
-
   var xScaleScroll = d3.scaleLinear()
     .range([0, widthScroll]);
 
@@ -110,6 +112,8 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
     return b.value - a.value
   })
 
+
+
   var yScaleScroll = d3.scaleBand()
     .domain(scrollData.map(function(d) {
       return d.vendor
@@ -117,7 +121,6 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
     .range([0, heightScroll])
     .paddingInner(0.7)
     .paddingOuter(0);
-
 
   var barsupdateKPI = d3.select("#scrollG").selectAll("rect")
     .data(scrollData);
@@ -153,15 +156,30 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
       }
     })
     .attr("x", 0)
+    .attr("opacity",0)
+    .attr("width",function(d){
+      return xScaleScroll(0)
+    })
     .attr("y", function(d, i) {
       return yScaleScroll(d.vendor);
     })
+    .attr("height", yScaleScroll.bandwidth())
+    .transition()
+    .duration(700)
     .attr("width", function(d) {
       return xScaleScroll(d.value);
     })
-    .attr("height", yScaleScroll.bandwidth())
+    .attr("opacity",1);
+
 
   barsupdateKPI.exit()
+  .attr("opacity",1)
+  .transition()
+  .duration(350)
+  .attr("width",function(d){
+    return xScaleScroll(0)
+  })
+  .attr("opacity", 0)
     .remove();
 
   var valuesupdate = d3.select("#scrollG").selectAll("text.values")
@@ -175,27 +193,63 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
     .attr("y", function(d, i) {
       return yScaleScroll(d.vendor) + (yScaleScroll.bandwidth() / 2) + 1;
     })
-    .text(function(d) {
-      return formScroll(d.value)
+    .tween("text", function(d) {
+      var node = this;
+      var currentVal = this.textContent;
+      var i = d3.interpolate(currentVal, d.value);
+      return function(t) {
+        node.textContent = formScroll(i(t));
+      };
     });
+
 
   valuesupdate.enter()
     .append("text")
+    .attr("opacity", 0)
     .attr("class", "values")
-    .attr("x", function(d) {
-      return xScaleScroll(d.value) + 6
-    })
     .attr("y", function(d, i) {
       return yScaleScroll(d.vendor) + (yScaleScroll.bandwidth() / 2) + 1;
     })
-    .text(function(d) {
-      return formScroll(d.value)
-    })
+    .attr("dy","0.25em")
     .attr("fill", "rgb(102, 102, 102)")
     .style("text-anchor", "start")
-    .attr("font-size", 14);
+    .attr("font-size", 14)
+    .attr("x", function(d) {
+      return xScaleScroll(0) + 6
+    })
+    .transition()
+    .duration(700)
+    .attr("x", function(d) {
+      return xScaleScroll(d.value) + 6
+    })
+    .attr("opacity", 1)
+    .tween("text", function(d) {
+      var node = this;
+      var currentVal = this.textContent;
+      var i = d3.interpolate(currentVal, d.value);
+      return function(t) {
+        node.textContent = formScroll(i(t));
+      };
+    });
 
-  valuesupdate.exit().remove();
+
+  valuesupdate.exit()
+  .attr("opacity",1)
+  .transition()
+  .duration(350)
+  .attr("x",function(d){
+    return xScaleScroll(0)
+  })
+  .tween("text", function(d) {
+    var node = this;
+    var currentVal = this.textContent;
+    var i = d3.interpolate(currentVal, 0);
+    return function(t) {
+      node.textContent = formScroll(i(t));
+    };
+  })
+  .attr("opacity", 0)
+  .remove();
 
   var vendorlabelsupdate = d3.select("#scrollG").selectAll("text.labels")
     .data(scrollData);
@@ -213,6 +267,7 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
     .append("text")
     .attr("class", "labels")
     .attr("x", widthScroll > 380 ? -18 : -12)
+    .attr("dy","0.25em")
     .attr("y", function(d, i) {
       return yScaleScroll(d.vendor) + (yScaleScroll.bandwidth() / 2) + 1;
     })
@@ -221,9 +276,17 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
     })
     .attr("fill", "rgb(102, 102, 102)")
     .style("text-anchor", "end")
-    .attr("font-size", 14);
+    .attr("font-size", 14)
+    .attr("opacity", 0)
+    .transition()
+    .duration(700)
+    .attr("opacity", 1);
 
-  vendorlabelsupdate.exit().remove();
+  vendorlabelsupdate.exit()
+  .attr("opacity",1)
+  .transition()
+  .duration(350)
+  .attr("opacity", 0).remove();
 
 
 }

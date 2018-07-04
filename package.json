@@ -40,8 +40,10 @@
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
     "popper.js": "^1.14.3",
+    "promise-polyfill": "^8.0.0",
     "raw-loader": "^0.5.1",
     "sass-loader": "^7.0.3",
+    "scroll-out": "^2.1.0",
     "stickyfilljs": "^2.0.5",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.5",
@@ -50,6 +52,10 @@
     "webpack-bundle-analyzer": "^2.13.1",
     "webpack-cli": "^3.0.3",
     "webpack-dev-server": "^3.1.4",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "html-webpack-polyfill-io-plugin": "^1.0.0"
   }
 }

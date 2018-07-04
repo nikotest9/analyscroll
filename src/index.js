@@ -1,3 +1,13 @@
+import 'whatwg-fetch';
+import Promise from 'promise-polyfill';
+// To add to window
+if (!window.Promise) {
+  window.Promise = Promise;
+}
+
+
+
+
 import 'bootstrap';
 import * as d3 from 'd3';
 import './styles.scss';
@@ -5,10 +15,11 @@ import enterView from './third/enter-view.js';
 import Stickyfill from 'stickyfilljs';
 import { init } from './initfunction.js';
 import { initialChart } from './initialchart.js'
-let vendor = "Phocas";
+let vendor = "Product A";
 let peerGroupInit="Americas-focused vendors";
-var KPIInit = "Business benefits";
 
+var KPIInit = "Business benefits";
+  import ScrollOut from "scroll-out";
 export {vendor, peerGroupInit, KPIInit};
 
 import {
@@ -24,10 +35,27 @@ require('./third/bootstrap.css');
 require('./styles.css');
 
 
+(function (arr) {
+  arr.forEach(function (item) {
+    if (item.hasOwnProperty('remove')) {
+      return;
+    }
+    Object.defineProperty(item, 'remove', {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: function remove() {
+        this.parentNode.removeChild(this);
+      }
+    });
+  });
+})([Element.prototype, CharacterData.prototype, DocumentType.prototype]);
 
 
 
 $(document).ready(function() {
+
+
 
 
 
@@ -56,5 +84,6 @@ $(document).ready(function() {
 
 
 
+           ScrollOut({ cssProps: true, threshhold: 0.5});
 
 });

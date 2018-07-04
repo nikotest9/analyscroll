@@ -1,19 +1,22 @@
 import scrollDataRaw from './data/kpis.csv';
 import {vendor, peerGroupInit, KPIInit} from './index.js';
 
+
 export function initialChart(vendor) {
+  console.log(vendor)
 
   var chartScroll = d3.select("#chartScroll");
   var figure = d3.select("figure.sticky");
 
   var widthHelperScroll = parseInt(chartScroll.style("width"));
+
   var heightHelperScroll = parseInt(figure.style("height"));
 
   var marginScroll = {
       top: widthHelperScroll > 380 ? 80 : 80,
       right: 65,
       bottom: 45,
-      left: widthHelperScroll > 380 ? 160 : 5
+      left: widthHelperScroll > 380 ? 160 : 160
     },
     widthScroll = widthHelperScroll - marginScroll.left - marginScroll.right,
     heightScroll = heightHelperScroll > 500 ? (500 - marginScroll.top - marginScroll.bottom) : (heightHelperScroll - marginScroll.top - marginScroll.bottom);
@@ -130,7 +133,7 @@ export function initialChart(vendor) {
       .attr("y", function(d, i) {
         return yScaleScroll(d.vendor) +(yScaleScroll.bandwidth()/2)+1 ;
       })
-      .attr("alignment-baseline","middle")
+      .attr("dy","0.25em")
       .text(function(d) {
         return formScroll(d.value)
       })
@@ -149,12 +152,10 @@ export function initialChart(vendor) {
         .text(function(d) {
           return d.vendor
         })
-        .attr("alignment-baseline","middle")
+        .attr("dy","0.25em")
         .attr("fill", "rgb(102, 102, 102)")
         .style("text-anchor", "end")
         .attr("font-size", 14)
-
-
 
 
 }
