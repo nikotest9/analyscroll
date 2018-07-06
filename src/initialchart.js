@@ -3,7 +3,7 @@ import {vendor, peerGroupInit, KPIInit} from './index.js';
 
 
 export function initialChart(vendor) {
-  console.log(vendor)
+
 
   var chartScroll = d3.select("#chartScroll");
   var figure = d3.select("figure.sticky");
