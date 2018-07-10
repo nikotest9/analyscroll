@@ -14,7 +14,8 @@ import './styles.scss';
 import enterView from './third/enter-view.js';
 import Stickyfill from 'stickyfilljs';
 import { init } from './initfunction.js';
-import { initialChart } from './initialchart.js'
+import { initialChart } from './initialchart.js';
+import { initAnaly } from './chart.js';
 let vendor = "Product A";
 let peerGroupInit="Americas-focused vendors";
 
@@ -30,7 +31,7 @@ require('./third/TweenMax.min.js');
 require('./third/tabsjs');
 
 require('./third/bootstrap-select.min.js');
-require('./chart.js');
+
 require('./third/bootstrap.css');
 require('./styles.css');
 

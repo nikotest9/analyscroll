@@ -13,6 +13,8 @@ import {
 
 import {vendor, peerGroupInit} from '../index.js';
 
+import { initAnaly } from '../chart.js';
+
 
 
 
@@ -121,6 +123,7 @@ var app = {
 
       var triggerId = this.id;
 
+
       var triggerOff = this.getAttribute("data-trigger");
 
       if (triggerHelp == 0 & triggerId == "trigger" ) {
@@ -132,7 +135,7 @@ var app = {
         setTimeout(function(){
 
           initialChart(vendor)
-      
+
         },600);
         init();
         updateSelect(peerGroupInit);
@@ -144,6 +147,22 @@ var app = {
 
         triggerHelp = 1;
         triggerHelp2 = 0;
+      };
+
+      if ( triggerId == "nonproduct" ) {
+
+        setTimeout(function(){
+
+          initAnaly()
+
+        },100);
+
+      };
+
+      if ( triggerId !== "nonproduct" ) {
+
+        document.getElementById("analyID").remove();
+
       };
 
       if (triggerOff == "triggeroff" & triggerHelp2 == 0) {
