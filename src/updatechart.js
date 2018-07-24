@@ -35,22 +35,32 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
   var heightHelperScroll = parseInt(figure.style("height"));
 
   var marginScroll = {
-      top: widthHelperScroll > 380 ? 80 : 80,
-      right: 65,
-      bottom: 45,
-      left: widthHelperScroll > 380 ? 160 : 160
+      top: widthHelperScroll > 280 ? 20 : 15,
+      right: 40,
+      bottom: widthHelperScroll > 280 ? 60 : 40,
+      left: widthHelperScroll > 280 ? 160 : 5
     },
     widthScroll = widthHelperScroll - marginScroll.left - marginScroll.right,
     heightScroll = heightHelperScroll > 500 ? (500 - marginScroll.top - marginScroll.bottom) : (heightHelperScroll - marginScroll.top - marginScroll.bottom);
 
+
+    d3.select("#chartScroll").select("svg")
+      .attr("width", widthScroll + marginScroll.left + marginScroll.right)
+      .attr("height", heightScroll + marginScroll.top + marginScroll.bottom);
+
+
+        d3.select("#chartScroll").select("svg").select("g").attr("transform", "translate(" + marginScroll.left + "," + marginScroll.top + ")");
+
+
   var newPeerDesc = "Peer group: " + updatePeer;
 
-  var oldPeerDesc = d3.select("text.peerGroupDesc").text();
+  var oldPeerDesc = d3.select("#peerGroupID").text();
 
   if (newPeerDesc !== oldPeerDesc) {
 
-    var peerDesc = d3.select(".peerGroupDesc")
+    var peerDesc = d3.select("#peerGroupID")
       .transition()
+                .delay(100)
       .duration(300)
       .style("opacity", 0)
       .transition()
@@ -77,11 +87,11 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
 
   var newKPIDesc = KPIselect + " – " + posVen;
 
-  var oldKPIDesc = d3.select("text.chartTitle").text();
+  var oldKPIDesc = d3.select("#chartTitle").text();
 
   if (newKPIDesc !== oldKPIDesc) {
 
-    var peerDesc = d3.select(".chartTitle")
+    var peerDesc = d3.select("#chartTitle")
       .transition()
       .duration(300)
       .style("opacity", 0)
@@ -90,6 +100,17 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
       .text(newKPIDesc)
       .style("opacity", 1);
   }
+
+
+  d3.select("#legend1")
+    .attr("x", (widthHelperScroll>416) ? marginScroll.left : marginScroll.left)
+    .attr("y", (widthHelperScroll>416) ? heightScroll + marginScroll.top + marginScroll.bottom - 33 : heightScroll + marginScroll.top + marginScroll.bottom - 23);
+
+
+      d3.select("#legend2")
+      .attr("x", (widthHelperScroll>416) ? marginScroll.left+120 : marginScroll.left)
+      .attr("y", (widthHelperScroll>416) ? heightScroll + marginScroll.top + marginScroll.bottom - 33 : heightScroll + marginScroll.top + marginScroll.bottom - 10);
+
 
 
   var xScaleScroll = d3.scaleLinear()
@@ -193,6 +214,7 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
     .attr("y", function(d, i) {
       return yScaleScroll(d.vendor) + (yScaleScroll.bandwidth() / 2) + 1;
     })
+    .attr("font-size", widthHelperScroll > 280 ? 14 : 10)
     .tween("text", function(d) {
       var node = this;
       var currentVal = this.textContent;
@@ -213,7 +235,7 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
     .attr("dy","0.25em")
     .attr("fill", "rgb(102, 102, 102)")
     .style("text-anchor", "start")
-    .attr("font-size", 14)
+    .attr("font-size", widthHelperScroll > 280 ? 14 : 10)
     .attr("x", function(d) {
       return xScaleScroll(0) + 6
     })
@@ -257,26 +279,40 @@ export function KPIUpdate(KPIselect, updatePeer, vendor) {
   vendorlabelsupdate.transition()
     .duration(700)
     .attr("y", function(d, i) {
+
+      if (widthHelperScroll > 280) {
       return yScaleScroll(d.vendor) + (yScaleScroll.bandwidth() / 2) + 1;
+      } else {
+        return yScaleScroll(d.vendor) + (yScaleScroll.bandwidth() / 2) - 9;
+      }
     })
+    .style("text-anchor", widthHelperScroll > 280 ? "end" : "start")
+    .attr("font-size", widthHelperScroll > 280 ? 14 : 10)
+        .attr("x", widthHelperScroll > 280 ? -12 : 0)
     .text(function(d) {
       return d.vendor
     });
 
+
+
   vendorlabelsupdate.enter()
     .append("text")
     .attr("class", "labels")
-    .attr("x", widthScroll > 380 ? -18 : -12)
+    .attr("x", widthHelperScroll > 280 ? -12 : 0)
     .attr("dy","0.25em")
     .attr("y", function(d, i) {
+      if (widthHelperScroll > 280) {
       return yScaleScroll(d.vendor) + (yScaleScroll.bandwidth() / 2) + 1;
+      } else {
+        return yScaleScroll(d.vendor) + (yScaleScroll.bandwidth() / 2) - 10;
+      }
     })
     .text(function(d) {
       return d.vendor
     })
     .attr("fill", "rgb(102, 102, 102)")
-    .style("text-anchor", "end")
-    .attr("font-size", 14)
+    .style("text-anchor", widthHelperScroll > 280 ? "end" : "start")
+    .attr("font-size", widthHelperScroll > 280 ? 14 : 10)
     .attr("opacity", 0)
     .transition()
     .duration(700)

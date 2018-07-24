@@ -25,7 +25,7 @@ export function init(indexBlock) {
     selector: stepSel.nodes(),
     offset: 0.5,
     enter: el => {
-      
+
 
         const index = +d3.select(el).attr('data-index');
         if (index == 3) {
@@ -127,3 +127,9 @@ d3.selectAll("#buttonKPI4").selectAll("button")
 
 
   })
+
+
+
+  window.addEventListener('resize', function() {
+    KPIUpdate("Business benefits", "Americas-focused vendors", vendor);
+  });

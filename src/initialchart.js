@@ -13,10 +13,10 @@ export function initialChart(vendor) {
   var heightHelperScroll = parseInt(figure.style("height"));
 
   var marginScroll = {
-      top: widthHelperScroll > 380 ? 80 : 80,
-      right: 65,
-      bottom: 45,
-      left: widthHelperScroll > 380 ? 160 : 160
+      top: widthHelperScroll > 280 ? 20 : 15,
+      right: 40,
+      bottom: widthHelperScroll > 280 ? 60 : 40,
+      left: widthHelperScroll > 280 ? 160 : 5
     },
     widthScroll = widthHelperScroll - marginScroll.left - marginScroll.right,
     heightScroll = heightHelperScroll > 500 ? (500 - marginScroll.top - marginScroll.bottom) : (heightHelperScroll - marginScroll.top - marginScroll.bottom);
@@ -54,33 +54,29 @@ export function initialChart(vendor) {
     .attr("height", heightScroll + marginScroll.top + marginScroll.bottom)
     .attr("id", "scrollsvg");
 
-    var title = svgScroll.append("text")
-                  .text("Business benefits – Top-ranked")
-                  .attr("transform", "translate(" + 0 + "," + (22) + ")")
-                  .attr("class", "chartTitle");
+    var title = d3.select("#chartTitle")
+                  .text("Business benefits – Top-ranked");
 
-   var line = svgScroll.append("line")
-                 .attr("transform", "translate(" + 0 + "," + (32) + ")")
-                 .attr("x1", 0)
-                 .attr("y1", 0)
-                 .attr("x2", widthScroll + marginScroll.left + marginScroll.right)
-                 .attr("y2", 0)
-                 .style("stroke", "#99b2cc")
-                 .style("stroke-width", 1);
 
-   var responses = svgScroll
-                  .append("text")
-                  .attr("class", "peerGroupDesc")
-                  .text("Peer group: Americas-focused vendors")
-                  .attr("transform", "translate(" + 0 + "," + 52 + ")");
-
+   var responses = d3.select("#peerGroupID")
+                  .text("Peer group: Americas-focused vendors");
 
 
   var legend = svgScroll.append("text")
-    .text("1 = Lowest value \u00A0  10 = Highest value")
-    .attr("x", marginScroll.left)
-    .attr("y", heightScroll + marginScroll.top + marginScroll.bottom - 10)
+    .text("1 = Lowest value")
+    .attr("x", (widthHelperScroll>416) ? marginScroll.left : marginScroll.left)
+    .attr("y", (widthHelperScroll>416) ? heightScroll + marginScroll.top + marginScroll.bottom - 33 : heightScroll + marginScroll.top + marginScroll.bottom - 23)
     .attr("class", "legend")
+    .attr("id", "legend1");
+
+
+    var legend2 = svgScroll.append("text")
+      .text("10 = Highest value")
+      .attr("x", (widthHelperScroll>416) ? marginScroll.left+120 : marginScroll.left)
+      .attr("y", (widthHelperScroll>416) ? heightScroll + marginScroll.top + marginScroll.bottom - 33 : heightScroll + marginScroll.top + marginScroll.bottom - 10)
+      .attr("class", "legend")
+      .attr("id", "legend2");
+
 
   var svgKPI = svgScroll.append("g")
     .attr("transform", "translate(" + marginScroll.left + "," + marginScroll.top + ")")
@@ -138,24 +134,28 @@ export function initialChart(vendor) {
         return formScroll(d.value)
       })
       .attr("fill", "rgb(102, 102, 102)")
-      .attr("font-size", 14);
+    .attr("font-size", widthHelperScroll > 280 ? 14 : 10);
 
       var labelsScroll = svgKPI.append("g")
         .selectAll("text")
         .data(scrollData, keys)
         .enter().append("text")
         .attr("class", "labels")
-        .attr("x", widthScroll > 380 ? -18 : -12)
-        .attr("y", function(d, i) {
-          return yScaleScroll(d.vendor) +(yScaleScroll.bandwidth()/2)+1 ;
-        })
+    .attr("x", widthHelperScroll > 280 ? -12 : 0)
+    .attr("y", function(d, i) {
+
+      if (widthHelperScroll > 280) {
+      return yScaleScroll(d.vendor) + (yScaleScroll.bandwidth() / 2) + 1;
+      } else {
+        return yScaleScroll(d.vendor) + (yScaleScroll.bandwidth() / 2) - 9;
+      }
+    })
         .text(function(d) {
           return d.vendor
         })
         .attr("dy","0.25em")
         .attr("fill", "rgb(102, 102, 102)")
-        .style("text-anchor", "end")
-        .attr("font-size", 14)
-
+        .style("text-anchor", widthHelperScroll > 280 ? "end" : "start")
+        .attr("font-size", widthHelperScroll > 280 ? 14 : 10);
 
 }
