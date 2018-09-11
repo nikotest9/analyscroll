@@ -2,6 +2,10 @@
   font-size: 0.9rem;
 }
 
+#colHeight {
+  height:100%;
+}
+
 #chart {
   max-width: 700px;
 }
@@ -297,6 +301,7 @@ body {
   background-size: cover;
   overflow: hidden;
   height: 65vh;
+  min-height:400px;
   margin-top: 0px;
   display: flex;
   flex-direction: column;

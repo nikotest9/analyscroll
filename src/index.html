@@ -70,7 +70,7 @@
 
           <section class='filler'>
             <h2>Product A Highlights</h2>
-            <p class="fillerp">This interactive article is a specially produced summary by BARC of the headline results for Product A. It contains just a selection of the headline findings for Product A. It does not show all the KPI results and focuses mainly on the positive
+            <p class="fillerp">This interactive article by BARC is a specially produced summary of the headline results for Product A. It contains just a selection of the headline findings for Product A. It does not show all the KPI results and focuses mainly on the positive
               findings for Product A. For more information on the survey, visit <a href="https://bi-survey.com">The BI Survey website.</a></p>
 
           </section>
@@ -178,7 +178,7 @@
             <div class="centering ">
 
 
-              <h2 class="go-in">Product A's Highlight Quotes*</h2>
+              <h2 class="go-in">Quotes from Product A Customers*</h2>
 
               <div data-scroll class="row align-items-center closer">
                 <div class="wrapper3">
@@ -206,7 +206,7 @@
             <div class="centering ">
 
 
-              <h2>BARC's Summary on Product A's Highlights</h2>
+              <h2>BARC's Summary of Product A's Highlights</h2>
               <p class="fillerp max">Year after year, Product A underpins its status as one of the leading CPM and BI vendors in The BI Survey. The vendor’s flexible, integrated CPM platform for planning, simulation, strategy implementation (balanced scorecard) and project
                 portfolio management clearly seems to satisfy customers.</p>
               <p class="fillerp max">Outstanding price-performance ratio paired with strong performance, vendor and product satisfaction convinces customers. Customers can greatly benefit from outperform in terms of faster and more accurate reporting, analysis or planning,
@@ -227,7 +227,7 @@
                   <div class="containerflex">
 
                     <p class="pcloser extramargin">
-                      To get the full picture purchase the entire Vendor Performance Suammry here
+                      To get the full picture, purchase the entire Vendor Performance Summary for € 490 (excl. tax) here
                     </p>
 
 
@@ -251,232 +251,312 @@
         </div>
         <div class="section" data-section="b">
 
-          <section class='filler' id="filleranalyz">
-            <h2>The BI Survey Analyzer</h2>
-            <p class="fillerp">Our powerful interactive online tool, enables you to perform your own custom analysis of the survey data. <strong>This basic version</strong> allows you to analyze the results for each question in The BI Survey and filter results by region,
-              industry, company size etc. <strong><a href="https://bi-survey.com/contact-page">The premium version</a></strong> gives you access to all the product-related findings, enabling you to make customized comparisons of the BI products on your
-              shortlist across the whole set of 29 KPIs.</p>
 
-          </section>
-          <div class="containeranal">
-            <div id="analyzer" class="row margintop2 justify-content-md-center">
+        <section class='filler' id="filleranalyz">
+          <h2>Survey Results</h2>
+          <p class="fillerp">This screen shows the responses to a single question in The BI Survey. You can choose the question in the dropdown box in the top left corner of the report. The filters to the left of the screen can be used to modify the chart.</p>
+
+        </section>
+        <div class="containeranal">
+          <div id="analyzer" class="row margintop2 justify-content-md-center">
 
 
-              <div class="maxWidth col-md">
-                <div class="row margintopAnal">
+            <div id="colHeight" class="maxWidth col-md">
+              <div class="row margintopAnal">
 
-                  <div class="filter">
-                    <div>
-                      <h4 class="question">Question</h4>
-                    </div>
-                    <div>
-                      <select id="question" name="question" class="selectpicker">
-                  <option id="button1" value="10" class="single">Department</option>
-                  <option id="button5" value="101" class="multi">Department using BI</option>
-                  <option id="button2" value="24" class="single">Position</option>
-                  <option id="button3" value="26" class="single">Replaced BI systems</option>
-                  <option id="button4" value="102" class="multi">Reasons replacing</option>
-                </select>
-                    </div>
+                <div class="filter">
+                  <div>
+                    <h4 class="question">Question</h4>
                   </div>
-                  <div class="filter">
-                    <div>
-                      <h4>Region</h4>
-                    </div>
-                    <div>
-                      <select id="region" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>5" data-count-selected-text="All selected">
-                <option value="Europe">Europe</option>
-                <option value="Asia and Pacific">Asia and Pacific</option>
-                <option value="North America">North America</option>
-                <option value="South America">South America</option>
-                <option value="ROW">ROW</option>
-                <option value="Did not respond">Did not respond</option>
+                  <div>
+                    <select id="question" name="question" class="selectpicker" data-size="6">
+                <optgroup label="Demographics">
+                <option id="button4" value="307" class="single" data-sort="1">Country</option>
+                <option id="button1" value="5" class="single" data-sort="1">Department</option>
+                <option id="button2" value="101" class="multi" data-sort="1">Department using BI</option>
+                <option id="button2" value="389" class="single" data-sort="1">European regions</option>
+                <option id="button2" value="313" class="single" data-sort="1">Industry</option>
+                <option id="button3" value="310" class="single" data-sort="2">Number of product users</option>
+                <option id="button3" value="309" class="single" data-sort="2">Number of BI users</option>
+                <option id="button3" value="308" class="single" data-sort="2">Number of employees</option>
+                <option id="button3" value="311" class="single" data-sort="2">Percentage of BI users</option>
+                <option id="button3" value="19" class="single" data-sort="1">Position</option>
+                <option id="button3" value="312" class="single" data-sort="1">Region</option>
+
+                <optgroup label="Selection">
+                <option id="button2" value="113" class="multi" data-sort="1">Acquired products</option>
+                <option id="button2" value="314" class="single" data-sort="1">Chosen product</option>
+                <option id="button2" value="112" class="multi" data-sort="1">Evaluated products</option>
+                <option id="button2" value="102" class="multi" data-sort="1">Reasons for replacing BI systems</option>
+                <option id="button2" value="107" class="multi" data-sort="1">Reasons to buy</option>
+                <option id="button2" value="20" class="single" data-sort="2">Replaced BI systems</option>
+                <option id="button2" value="183" class="single" data-sort="1">Selection type</option>
+                </optgroup >
+
+                <optgroup label="Sales experience">
+                  <option id="button2" value="242" class="single" data-sort="2">General behaviour</option>
+                  <option id="button2" value="241" class="single" data-sort="2">Industry knowledge</option>
+                  <option id="button2" value="240" class="single" data-sort="2">Pricing/contract flexibility</option>
+                  <option id="button2" value="237" class="single" data-sort="2">Product evaluation</option>
+                  <option id="button2" value="239" class="single" data-sort="2">Understanding of needs</option>
+                  <option id="button2" value="238" class="single" data-sort="2">Vendor responsiveness</option>
+                </optgroup >
+
+                <optgroup label="Implementation">
+                <option id="button2" value="245" class="single" data-sort="2">Admin satisfaction (technical)</option>
+                <option id="button2" value="263" class="single" data-sort="2">Project length</option>
+                <option id="button2" value="247" class="single" data-sort="2">Project on-budget</option>
+                <option id="button2" value="246" class="single" data-sort="2">Project on-time</option>
+                <option id="button2" value="244" class="single" data-sort="2">User satisfaction (business)</option>
+                <option id="button2" value="243" class="single" data-sort="2">User satisfaction (technical)</option>
+                </optgroup >
+
+                <optgroup label="Product">
+                <option id="button3" value="182" class="single" data-sort="2">Application age</option>
+                <option id="button3" value="265" class="single" data-sort="2">Data volume</option>
+                <option id="button3" value="103" class="multi" data-sort="1">Front-end product IBM Cognos TM1</option>
+                <option id="button3" value="104" class="multi" data-sort="1">Front-end product Microsoft (SSAS)</option>
+                <option id="button3" value="105" class="multi" data-sort="1">Front-end product Oracle Essbase</option>
+                <option id="button3" value="106" class="multi" data-sort="1">Front-end product SAP BW</option>
+                <option id="button3" value="108" class="multi" data-sort="1">Implementation problems</option>
+                <option id="button3" value="262" class="single" data-sort="2">Price-to-value</option>
+                <option id="button3" value="264" class="single" data-sort="2">Query response time</option>
+                <option id="button3" value="259" class="single" data-sort="2">Recommendation of product</option>
+                <option id="button3" value="110" class="multi" data-sort="1">Tasks business users</option>
+                <option id="button3" value="109" class="multi" data-sort="1">Usage problems</option>
+                </optgroup >
+
+                <optgroup label="Support">
+                <option id="button7" value="261" class="single" data-sort="2">Implementer support</option>
+                <option id="button7" value="260" class="single" data-sort="2">Vendor support</option>
+                </optgroup >
+
+                <optgroup label="Tasks">
+                <option id="button7" value="177" class="single" data-sort="2">Ad-hoc querying</option>
+                <option id="button7" value="179" class="single" data-sort="2">Advanced analysis</option>
+                <option id="button7" value="178" class="single" data-sort="2">Basic data analysis</option>
+                <option id="button7" value="180" class="single" data-sort="2">Budgeting/Planning</option>
+                <option id="button7" value="176" class="single" data-sort="2">Dashboards/Scorecards</option>
+                <option id="button7" value="181" class="single" data-sort="2">Financial consolidation</option>
+                <option id="button7" value="175" class="single" data-sort="2">Reporting</option>
+                </optgroup >
+
+                <optgroup label="Benefits">
+                <option id="button4" value="257" class="single" data-sort="2">Accurate reporting</option>
+                <option id="button4" value="251" class="single" data-sort="2">Better decisions</option>
+                <option id="button4" value="253" class="single" data-sort="2">Competitive advantage</option>
+                <option id="button4" value="248" class="single" data-sort="2">Costs</option>
+                <option id="button4" value="252" class="single" data-sort="2">Customer satisfaction</option>
+                <option id="button4" value="250" class="single" data-sort="2">Data quality</option>
+                <option id="button4" value="249" class="single" data-sort="2">Employee satisfaction</option>
+                <option id="button4" value="258" class="single" data-sort="2">Faster reporting</option>
+                <option id="button4" value="254" class="single" data-sort="2">Headcount</option>
+                <option id="button4" value="256" class="single" data-sort="2">Increased revenues</option>
+                <option id="button4" value="255" class="single" data-sort="2">Operational efficency</option>
+                </optgroup >
+
+                <optgroup label="Trends">
+                <option id="button3" value="276" class="single" data-sort="2">BI with real-time data</option>
+                <option id="button3" value="273" class="single" data-sort="2">Cloud BI/BlaaS</option>
+                <option id="button3" value="284" class="single" data-sort="2">Cloud-based deployment</option>
+                <option id="button3" value="274" class="single" data-sort="2">Collaboration</option>
+                <option id="button3" value="281" class="single" data-sort="2">Data preparation</option>
+                <option id="button3" value="282" class="single" data-sort="2">Embedded BI</option>
+                <option id="button3" value="285" class="single" data-sort="2">Importance of predictive analytics</option>
+                <option id="button3" value="283" class="single" data-sort="2">Integration of BI and PM</option>
+                <option id="button3" value="275" class="single" data-sort="2">Mobile BI</option>
+                <option id="button3" value="277" class="single" data-sort="2">Self-service BI</option>
+                <option id="button3" value="271" class="single" data-sort="2">Sensor data analysis</option>
+                <option id="button3" value="279" class="single" data-sort="2">Spatial/Location analysis</option>
+                <option id="button3" value="272" class="single" data-sort="2">Text data analysis</option>
+                <option id="button3" value="111" class="multi" data-sort="1">Use cases</option>
+                <option id="button3" value="280" class="single" data-sort="2">Visual analysis</option>
+                <option id="button3" value="278" class="single" data-sort="2">Visual design standards</option>
+
               </select>
-                    </div>
                   </div>
-                  <div class="filter">
-                    <div>
-                      <h4>Industry</h4>
-                    </div>
-                    <div>
-                      <select id="industry" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>10" data-count-selected-text="All selected">
-                    <option value="Manufacturing">Manufacturing</option>
-                    <option value="Services">Services</option>
-                    <option value="Retail/Wholesale">Retail/Wholesale</option>
-                    <option value="Financial Services">Financial Services</option>
-                    <option value="IT">IT</option>
-                    <option value="Public sector and Education">Public sector/Education</option>
-                    <option value="Utilities">Utilities</option>
-                    <option value="Telecommunications">Telecommunications</option>
-                    <option value="Transport">Transport</option>
-                    <option value="Other">Other</option>
-                    <option value="Did not respond">Did not respond</option>
-                 </select>
-                    </div>
+                </div>
+
+                <div class="filter">
+                  <div>
+                    <h4>Region</h4>
                   </div>
-                  <div class="filter">
-                    <div>
-                      <h4>Employee</h4>
-                    </div>
-                    <div>
-                      <select id="employee" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>4" data-count-selected-text="All selected">
-                    <option value="Less than 150">Less than 150</option>
-                    <option value="150 - 500">150 - 500</option>
-                    <option value="500 - 1500">500 - 1500</option>
-                    <option value="1500 - 6000">1500 - 6000</option>
-                    <option value="More than 6000">More than 6000</option>
-                    <option value="Did not respond">Did not respond</option>
-                 </select>
-                    </div>
+                  <div>
+                    <select id="region" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>5" data-count-selected-text="All selected" >
+              <option value="Europe">Europe</option>
+              <option value="Asia and Pacific">Asia and Pacific</option>
+              <option value="North America">North America</option>
+              <option value="South America">South America</option>
+              <option value="Rest of the world">Rest of the world</option>
+              <option value="Did not respond">Did not respond</option>
+            </select>
                   </div>
-                  <div class="filter">
-                    <div>
-                      <h4>IT-Business</h4>
-                    </div>
-                    <div>
-                      <select id="itbus" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>2" data-count-selected-text="All selected">
-                    <option value="Business">Business</option>
-                    <option value="IT">IT</option>
-                    <option value="Did not respond">Did not respond</option>
-                 </select>
-                    </div>
+                </div>
+                <div class="filter">
+                  <div>
+                    <h4>Industry</h4>
                   </div>
-                  <div class="filter">
-                    <div>
-                      <h4>Revenue</h4>
-                    </div>
-                    <div>
-                      <select id="revenue" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>4" data-count-selected-text="All selected">
-                    <option value="Less than $100m">Less than $100m</option>
-                    <option value="$100m to $1bn">$100m to $1bn</option>
-                    <option value="$1bn to $15bn">$1bn to $15bn</option>
-                    <option value="More than $15bn">More than $15bn</option>
-                    <option value="Did not respond">Did not respond</option>
-                 </select>
-                    </div>
+                  <div>
+                    <select id="industry" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>10" data-count-selected-text="All selected" data-size="6">
+                  <option value="Manufacturing">Manufacturing</option>
+                  <option value="Services">Services</option>
+                  <option value="Retail/Wholesale">Retail/Wholesale</option>
+                  <option value="Financial Services">Financial Services</option>
+                  <option value="IT">IT</option>
+                  <option value="Public sector and Education">Public sector/Education</option>
+                  <option value="Utilities">Utilities</option>
+                  <option value="Telecommunications">Telecommunications</option>
+                  <option value="Transport">Transport</option>
+                  <option value="Other">Other</option>
+                  <option value="Did not respond">Did not respond</option>
+               </select>
                   </div>
-                  <div class="filter">
-                    <div>
-                      <h4>Country</h4>
-                    </div>
-                    <div>
-                      <select id="country" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>92" data-count-selected-text="All selected">
-                    <option value='Aland Islands'>Aland Islands</option>
-                    <option value='Algeria'>Algeria</option>
-                    <option value='American Samoa'>American Samoa</option>
-                    <option value='Andorra'>Andorra</option>
-                    <option value='Argentina'>Argentina</option>
-                    <option value='Australia'>Australia</option>
-                    <option value='Austria'>Austria</option>
-                    <option value='Belgium'>Belgium</option>
-                    <option value='Bolivia'>Bolivia</option>
-                    <option value='Brazil'>Brazil</option>
-                    <option value='Bulgaria'>Bulgaria</option>
-                    <option value='Canada'>Canada</option>
-                    <option value='Chile'>Chile</option>
-                    <option value='China'>China</option>
-                    <option value='Colombia'>Colombia</option>
-                    <option value='Cook Islands'>Cook Islands</option>
-                    <option value='Costa Rica'>Costa Rica</option>
-                    <option value='Czech Republic'>Czech Republic</option>
-                    <option value='Denmark'>Denmark</option>
-                    <option value='Ecuador'>Ecuador</option>
-                    <option value='Egypt'>Egypt</option>
-                    <option value='El Salvador'>El Salvador</option>
-                    <option value='Finland'>Finland</option>
-                    <option value='France'>France</option>
-                    <option value='French Guiana'>French Guiana</option>
-                    <option value='French Polynesia'>French Polynesia</option>
-                    <option value='Germany'>Germany</option>
-                    <option value='Gibraltar'>Gibraltar</option>
-                    <option value='Greece'>Greece</option>
-                    <option value='Guatemala'>Guatemala</option>
-                    <option value='Hong Kong'>Hong Kong</option>
-                    <option value='Hungary'>Hungary</option>
-                    <option value='Iceland'>Iceland</option>
-                    <option value='India'>India</option>
-                    <option value='Indonesia'>Indonesia</option>
-                    <option value='Ireland'>Ireland</option>
-                    <option value='Isle of Man'>Isle of Man</option>
-                    <option value='Israel'>Israel</option>
-                    <option value='Italy'>Italy</option>
-                    <option value='Japan'>Japan</option>
-                    <option value='Jordan'>Jordan</option>
-                    <option value='Kenya'>Kenya</option>
-                    <option value='Kuwait'>Kuwait</option>
-                    <option value='Latvia'>Latvia</option>
-                    <option value='Lebanon'>Lebanon</option>
-                    <option value='Liechtenstein'>Liechtenstein</option>
-                    <option value='Lithuania'>Lithuania</option>
-                    <option value='Luxembourg'>Luxembourg</option>
-                    <option value='Malaysia'>Malaysia</option>
-                    <option value='Malta'>Malta</option>
-                    <option value='Martinique'>Martinique</option>
-                    <option value='Mexico'>Mexico</option>
-                    <option value='Monaco'>Monaco</option>
-                    <option value='Morocco'>Morocco</option>
-                    <option value='Netherlands'>Netherlands</option>
-                    <option value='New Caledonia'>New Caledonia</option>
-                    <option value='New Zealand'>New Zealand</option>
-                    <option value='Nigeria'>Nigeria</option>
-                    <option value='Norway'>Norway</option>
-                    <option value='Pakistan'>Pakistan</option>
-                    <option value='Panama'>Panama</option>
-                    <option value='Peru'>Peru</option>
-                    <option value='Philippines'>Philippines</option>
-                    <option value='Poland'>Poland</option>
-                    <option value='Portugal'>Portugal</option>
-                    <option value='Puerto Rico'>Puerto Rico</option>
-                    <option value='Qatar'>Qatar</option>
-                    <option value='Republic of Korea'>Republic of Korea</option>
-                    <option value='Reunion'>Reunion</option>
-                    <option value='Romania'>Romania</option>
-                    <option value='Russian Federation'>Russian Federation</option>
-                    <option value='Saudi Arabia'>Saudi Arabia</option>
-                    <option value='Senegal'>Senegal</option>
-                    <option value='Serbia'>Serbia</option>
-                    <option value='Singapore'>Singapore</option>
-                    <option value='Slovakia'>Slovakia</option>
-                    <option value='Slovenia'>Slovenia</option>
-                    <option value='South Africa'>South Africa</option>
-                    <option value='Spain'>Spain</option>
-                    <option value='Sweden'>Sweden</option>
-                    <option value='Switzerland'>Switzerland</option>
-                    <option value='Thailand'>Thailand</option>
-                    <option value='Tunisia'>Tunisia</option>
-                    <option value='Turkey'>Turkey</option>
-                    <option value='Ukraine'>Ukraine</option>
-                    <option value='United Arab Emirates'>United Arab Emirates</option>
-                    <option value='United Kingdom'>United Kingdom</option>
-                    <option value='United States of America'>United States of America</option>
-                    <option value='United States Virgin Islands'>United States Virgin Islands</option>
-                    <option value='Uruguay'>Uruguay</option>
-                    <option value='Viet Nam'>Viet Nam</option>
-                    <option value='Zambia'>Zambia</option>
-                    <option value='Did not respond'>Did not respond</option>
-                 </select>
-                    </div>
+                </div>
+                <div class="filter">
+                  <div>
+                    <h4>No. of employees</h4>
+                  </div>
+                  <div>
+                    <select id="employee" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>4" data-count-selected-text="All selected">
+                  <option value="Less than 150">Less than 150</option>
+                  <option value="150 - 500">150 - 500</option>
+                  <option value="500 - 1500">500 - 1500</option>
+                  <option value="1500 - 6000">1500 - 6000</option>
+                  <option value="More than 6000">More than 6000</option>
+                  <option value="Did not respond">Did not respond</option>
+               </select>
+                  </div>
+                </div>
+                <div class="filter">
+                  <div>
+                    <h4>User type</h4>
+                  </div>
+                  <div>
+                    <select id="itbus" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>2" data-count-selected-text="All selected">
+                  <option value="Business">Business</option>
+                  <option value="IT">IT</option>
+                  <option value="Did not respond">Did not respond</option>
+               </select>
+                  </div>
+                </div>
+                <div class="filter">
+                  <div>
+                    <h4>Country</h4>
+                  </div>
+                  <div>
+                    <select id="country" class="selectpicker" multiple data-actions-box="true" data-selected-text-format="count>88" data-count-selected-text="All selected" data-size="6">
+                      <option value="Algeria">Algeria</option>
+        <option value="American Samoa">American Samoa</option>
+        <option value="Andorra">Andorra</option>
+        <option value="Angola">Angola</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Australia">Australia</option>
+        <option value="Austria">Austria</option>
+        <option value="Bahrain">Bahrain</option>
+        <option value="Barbados">Barbados</option>
+        <option value="Belarus">Belarus</option>
+        <option value="Belgium">Belgium</option>
+        <option value="Bermuda">Bermuda</option>
+        <option value="Bolivia (Plurinational State of)">Bolivia (Plurinational State of)</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Bulgaria">Bulgaria</option>
+        <option value="Canada">Canada</option>
+        <option value="Chile">Chile</option>
+        <option value="China">China</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Costa Rica">Costa Rica</option>
+        <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+        <option value="Croatia">Croatia</option>
+        <option value="Czech Republic">Czech Republic</option>
+        <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Dominican Republic">Dominican Republic</option>
+        <option value="Ecuador">Ecuador</option>
+        <option value="Egypt">Egypt</option>
+        <option value="El Salvador">El Salvador</option>
+        <option value="Estonia">Estonia</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="Greece">Greece</option>
+        <option value="Guatemala">Guatemala</option>
+        <option value="Hong Kong">Hong Kong</option>
+        <option value="Hungary">Hungary</option>
+        <option value="Iceland">Iceland</option>
+        <option value="India">India</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Isle of Man">Isle of Man</option>
+        <option value="Israel">Israel</option>
+        <option value="Italy">Italy</option>
+        <option value="Japan">Japan</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Kuwait">Kuwait</option>
+        <option value="Latvia">Latvia</option>
+        <option value="Liechtenstein">Liechtenstein</option>
+        <option value="Lithuania">Lithuania</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Malta">Malta</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Morocco">Morocco</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="New Caledonia">New Caledonia</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Norway">Norway</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Panama">Panama</option>
+        <option value="Paraguay">Paraguay</option>
+        <option value="Peru">Peru</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Republic of Korea">Republic of Korea</option>
+        <option value="Réunion">Réunion</option>
+        <option value="Romania">Romania</option>
+        <option value="Russian Federation">Russian Federation</option>
+        <option value="Saudi Arabia">Saudi Arabia</option>
+        <option value="Senegal">Senegal</option>
+        <option value="Serbia">Serbia</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Slovenia">Slovenia</option>
+        <option value="Somalia">Somalia</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Spain">Spain</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Thailand">Thailand</option>
+        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+        <option value="Turkey">Turkey</option>
+        <option value="United Arab Emirates">United Arab Emirates</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="United States of America">United States of America</option>
+        <option value="United States Virgin Islands">United States Virgin Islands</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Venezuela (Bolivarian Republic of)">Venezuela (Bolivarian Republic of)</option>
+        <option value="Viet Nam">Viet Nam</option>
+        <option value="Did not respond">Did not respond</option>
+        </select>
                   </div>
                 </div>
               </div>
-
-              <div class="col-md">
-                <div>
-                  <h4 id="questionlong">Which department do you work in?</h4>
-                </div>
-                <div id="nid">
-                  <p>N = <span id="ncount">2347</span></p>
-                </div>
-                <div id="chart">
-
-                </div>
-              </div>
-
             </div>
-          </div>
 
+            <div class="col-md">
+              <div>
+                <h4 id="questionlong">Which department do you work in?</h4>
+              </div>
+              <div id="nid">
+                <p>N = <span id="ncount">2296</span></p>
+              </div>
+              <div id="chart">
+
+              </div>
+            </div>
+
+          </div>
         </div>
 
+        </div>
 
         <div class="section" data-section="e">
           <section class='filler' id="filleranalyz">
@@ -486,16 +566,18 @@
 
           </section>
 
+
+
           <div class="containerHelp">
             <div class="helpWidth">
               <div class="accordion" id="accordion">
                 <div class="card">
                   <div class="card-header" role="tab" id="headingOne">
                     <h5 class="mb-0">
-		 <a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			Question Overview
-		</a>
-	</h5>
+   <a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    Question Overview
+  </a>
+</h5>
                   </div>
 
                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
@@ -517,7 +599,7 @@
                             <td>Are you able to make better business decisions through better analysis?</td>
                           </tr>
                           <tr>
-                            <td>Benefits: Competitve advantage</td>
+                            <td>Benefits: Competitive advantage</td>
                             <td>Did your competitive advantage increase?</td>
                           </tr>
                           <tr>
@@ -557,10 +639,6 @@
                             <td>Which department do you work in?</td>
                           </tr>
                           <tr>
-                            <td>Demography: Department IT-Business</td>
-                            <td>Which department do you work in?</td>
-                          </tr>
-                          <tr>
                             <td>Demography: Departments using BI</td>
                             <td>Which departments use BI applications?</td>
                           </tr>
@@ -587,6 +665,14 @@
                           <tr>
                             <td>Demography: Number of employees</td>
                             <td>Number of employees</td>
+                          </tr>
+                          <tr>
+                            <td>Demography: Position</td>
+                            <td>Position in company</td>
+                          </tr>
+                          <tr>
+                            <td>Demography: Regions</td>
+                            <td>Regions</td>
                           </tr>
                           <tr>
                             <td>Implementation: Admin satisfaction &#8211; technical</td>
@@ -617,24 +703,8 @@
                             <td>When did your company start using the product?</td>
                           </tr>
                           <tr>
-                            <td>Product: Classification</td>
-                            <td>Do you use/plan to use classification in your company?</td>
-                          </tr>
-                          <tr>
-                            <td>Product: Clustering/Segmentation</td>
-                            <td>Do you use/plan to use clustering/segmentation in your company?</td>
-                          </tr>
-                          <tr>
-                            <td>Product: Concurrent users</td>
-                            <td>What is the average number of concurrent users using the BI product?</td>
-                          </tr>
-                          <tr>
                             <td>Product: Data volume</td>
                             <td>What is the amount of data in the databases used with the BI product?</td>
-                          </tr>
-                          <tr>
-                            <td>Product: Discovery of correlations</td>
-                            <td>Do you use/plan to use discovery of correlations in your company?</td>
                           </tr>
                           <tr>
                             <td>Product: Front-end product IBM Cognos TM1</td>
@@ -657,10 +727,6 @@
                             <td>What are the most serious problems you have encountered during the implementation?</td>
                           </tr>
                           <tr>
-                            <td>Product: Importance of predictive analytics features</td>
-                            <td>How important is it that your company&#8217;s BI tool includes predictive analytics features?</td>
-                          </tr>
-                          <tr>
                             <td>Product: Price-to-value</td>
                             <td>How would you rate the price-to-value of your BI product?</td>
                           </tr>
@@ -673,19 +739,19 @@
                             <td>Would you recommend others to buy your BI product?</td>
                           </tr>
                           <tr>
-                            <td>Product: Standardization choice</td>
-                            <td>Is your product one of the products your company is working to standardize on?</td>
-                          </tr>
-                          <tr>
                             <td>Product: Tasks carried out by business users</td>
                             <td>Which tasks are carried out by business users in your company with your BI tool?</td>
                           </tr>
                           <tr>
-                            <td>Product: Trend analysis/Automated forecasting</td>
-                            <td>Do you use/plan to use trend analysis or automated forecasting in your company?</td>
+                            <tr>
+                              <td>Product: Usage problems</td>
+                              <td>What are the most serious problems you have encountered in using the product?</td>
+                            </tr>
+                            <td>Sales experience: General behavior</td>
+                            <td>How would you rate the vendor&#8217;s general conduct during the purchasing process?</td>
                           </tr>
                           <tr>
-                            <td>Sales experience: General behavior</td>
+                            <td>Sales experience: General behaviour</td>
                             <td>How would you rate the vendor&#8217;s general conduct during the purchasing process?</td>
                           </tr>
                           <tr>
@@ -721,7 +787,7 @@
                             <td>Which products has your organization evaluated?</td>
                           </tr>
                           <tr>
-                            <td>Selection: Reasons for replacing/abolishing BI system(s)</td>
+                            <td>Selection: Reasons for replacing BI systems</td>
                             <td>Reasons for replacing/abolishing BI system(s)?</td>
                           </tr>
                           <tr>
@@ -731,14 +797,6 @@
                           <tr>
                             <td>Selection: Replaced BI systems</td>
                             <td>Did your organization replace/abolish BI systems in the last 12 months?</td>
-                          </tr>
-                          <tr>
-                            <td>Selection: Resources importance</td>
-                            <td>Which resources had the biggest influence in deciding which product your company selected?</td>
-                          </tr>
-                          <tr>
-                            <td>Selection: Resources used</td>
-                            <td>Which resources did you use to find out about BI products during the selection process?</td>
                           </tr>
                           <tr>
                             <td>Selection: Selection type</td>
@@ -753,8 +811,8 @@
                             <td>How do you rate the support provided by the vendor?</td>
                           </tr>
                           <tr>
-                            <td>Tasks: Ad hoc querying</td>
-                            <td>Do you use or plan to use the application for ad hoc querying?</td>
+                            <td>Tasks: Ad-hoc querying</td>
+                            <td>Do you use or plan to use the application for ad-hoc querying?</td>
                           </tr>
                           <tr>
                             <td>Tasks: Advanced analysis</td>
@@ -785,8 +843,12 @@
                             <td>Does your company use your BI tool with real-time data?</td>
                           </tr>
                           <tr>
-                            <td>Trends: BIaaS</td>
+                            <td>Trends: Cloud BI/BIaaS</td>
                             <td>Does your company use BIaaS with your BI tool?</td>
+                          </tr>
+                          <tr>
+                            <td>Trends: Cloud-based deployment</td>
+                            <td>Generally, how feasible do you think a cloud-based deployment of a BI solution would be for your organization?</td>
                           </tr>
                           <tr>
                             <td>Trends: Collaboration</td>
@@ -799,6 +861,14 @@
                           <tr>
                             <td>Trends: Embedded BI</td>
                             <td>Does your company use your BI tool for embedded BI?</td>
+                          </tr>
+                          <tr>
+                            <td>Trends: Importance of predictive analytics</td>
+                            <td>How important is it that your company's BI tool includes predictive analytics features?</td>
+                          </tr>
+                          <tr>
+                            <td>Trends: Integration of BI and PM</td>
+                            <td>Does your company use a BI product with integration of BI and Performance Management?</td>
                           </tr>
                           <tr>
                             <td>Trends: Mobile BI</td>
@@ -821,6 +891,10 @@
                             <td>Does your company use your BI tool for text data analysis?</td>
                           </tr>
                           <tr>
+                            <td>Trends: Use cases</td>
+                            <td>In which BI use cases is your company investing in?</td>
+                          </tr>
+                          <tr>
                             <td>Trends: Visual analysis</td>
                             <td>Does your company use your BI tool for visual analysis?</td>
                           </tr>
@@ -837,547 +911,694 @@
                 <div class="card">
                   <div class="card-header" id="headingTwo">
                     <h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-						 			Peer Groups
-						 		</a>
-								 </h5>
+                <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                Peer Groups
+              </a>
+               </h5>
                   </div>
                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                     <div class="card-body">
                       <div class="d-flex flex-row mt-2">
                         <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
                           <li class="nav-item">
-                            <a href="#lorem" class="nav-link active" data-toggle="tab" role="tab" aria-controls="lorem">Solution-focused planning products</a>
+                            <a href="#americas" class="nav-link" data-toggle="tab" role="tab" aria-controls="americas">Americas-focused vendors</a>
                           </li>
                           <li class="nav-item">
-                            <a href="#ipsum" class="nav-link" data-toggle="tab" role="tab" aria-controls="ipsum">BI-focused products</a>
+                            <a href="#dash" class="nav-link" data-toggle="tab" role="tab" aria-controls="dash">Dashboarding-focused products</a>
                           </li>
                           <li class="nav-item">
-                            <a href="#dolor" class="nav-link" data-toggle="tab" role="tab" aria-controls="dolor">Enterprise software vendors</a>
+                            <a href="#datadisc" class="nav-link" data-toggle="tab" role="tab" aria-controls="datadisc">Data discovery-focused products</a>
                           </li>
                           <li class="nav-item">
-                            <a href="#sit-amet" class="nav-link" data-toggle="tab" role="tab" aria-controls="sit-amet">Flexible planning platforms</a>
+                            <a href="#embed" class="nav-link" data-toggle="tab" role="tab" aria-controls="embed">Embedded analytics-focused products</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#emea" class="nav-link" data-toggle="tab" role="tab" aria-controls="emea">EMEA-focused vendors</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#ipm" class="nav-link" data-toggle="tab" role="tab" aria-controls="ipm">Integrated performance management products</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#enter" class="nav-link" data-toggle="tab" role="tab" aria-controls="enter">Large enterprise BI platforms</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#inter" class="nav-link" data-toggle="tab" role="tab" aria-controls="inter">Large international BI vendors</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#olap" class="nav-link" data-toggle="tab" role="tab" aria-controls="olap">OLAP analysis-focused products</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#selfser" class="nav-link" data-toggle="tab" role="tab" aria-controls="selfser">Self-service reporting-focused products</a>
                           </li>
                         </ul>
+
                         <div class="tab-content">
-                          <div class="tab-pane fade show active" id="lorem" role="tabpanel">
-                            <h5>Solution-focused planning products</h5>
 
-                            <p>Solution-focused planning products are usually based on, or supplemented by, predefined planning solutions designed for particular applications (e.g., integrated financial planning, HR) or industries (e.g., energy, manufacturing).</p>
+                          <div class="tab-pane fade show active" id="americas" role="tabpanel">
+                            <h5>Americas-focused vendors</h5>
+
+                            <p>Includes products from vendors that have a significant presence in - and focus on - the Americas region.</p>
                             <ul>
-                              <li><a href="https://bi-survey.com/product/pyramid-analytics">BI Office Suite</a></li>
                               <li><a href="https://bi-survey.com/product/board">BOARD</a></li>
                               <li><a href="https://bi-survey.com/product/calumo">CALUMO</a></li>
                               <li><a href="https://bi-survey.com/product/carriots-analytics-envision">Carriots Analytics (Envision)</a></li>
-                              <li><a href="https://bi-survey.com/product/chartio">Chartio</a></li>
-                              <li><a href="https://bi-survey.com/product/cyberscience-cyberquery">Cyberquery</a></li>
-                              <li><a href="https://bi-survey.com/product/dimensional-insight">Diver Platform</a></li>
+                              <li><a href="https://bi-survey.com/product/cyberscience-cyberquery">Cyberscience</a></li>
+                              <li><a href="https://bi-survey.com/product/dimensional-insight">Dimensional Insight</a></li>
                               <li><a href="https://bi-survey.com/product/domo">Domo</a></li>
                               <li><a href="https://bi-survey.com/product/dundas">Dundas BI</a></li>
-                              <li><a href="https://bi-survey.com/product/entrinsik-informer">Entrinsik Informer</a></li>
+                              <li><a href="https://bi-survey.com/product/looker">Looker</a></li>
                               <li><a href="https://bi-survey.com/product/phocas">Phocas</a></li>
+                              <li><a href="https://bi-survey.com/product/pyramid-analytics">Pyramid Analytics</a></li>
+                              <li><a href="https://bi-survey.com/product/salesi">sales-i</a></li>
                               <li><a href="https://bi-survey.com/product/sisense">Sisense</a></li>
-                              <li><a href="https://bi-survey.com/product/yellowfin">Yellowfin BI</a></li>
-                              <li><a href="https://bi-survey.com/product/zoho-reports">Zoho Reports</a></li>
+                              <li><a href="https://bi-survey.com/product/yellowfin">Yellowfin</a></li>
                             </ul>
                           </div>
-                          <div class="tab-pane fade" id="ipsum" role="tabpanel">
-                            <h5>BI-focused products</h5>
 
-                            <p>Besides planning and performance management, BI-focused products target use cases such as standard reporting, ad hoc reporting, analysis, advanced analytics and dashboarding.</p>
+                            <div class="tab-pane fade" id="dash" role="tabpanel">
+                            <h5>Dashboarding-focused products</h5>
+
+                            <p>Products that focus on creating advanced and highly sophisticated dashboards.</p>
                             <ul>
-                              <li><a href="https://bi-survey.com/product/pyramid-analytics">BI Office Suite</a></li>
+                              <li><a href="https://bi-survey.com/product/board">BOARD</a></li>
+                              <li><a href="https://bi-survey.com/product/cubeware">Cubeware</a></li>
+                              <li><a href="https://bi-survey.com/product/dimensional-insight">Dimensional Insight</a></li>
+                              <li><a href="https://bi-survey.com/product/domo">Domo</a></li>
+                              <li><a href="https://bi-survey.com/product/dundas">Dundas BI</a></li>
+                              <li><a href="https://bi-survey.com/product/arcplan-enterpriseedge">Longview Analytics</a></li>
+                              <li><a href="https://bi-survey.com/product/looker">Looker</a></li>
+                              <li><a href="https://bi-survey.com/product/microsoft-power-bi">Microsoft Power BI</a></li>
+                              <li><a href="https://bi-survey.com/product/pyramid-analytics">Pyramid Analytics</a></li>
+                              <li><a href="https://bi-survey.com/product/qlikview">QlikView</a></li>
+                              <li><a href="https://bi-survey.com/product/salesi">sales-i</a></li>
+                              <li><a href="https://bi-survey.com/product/sapanalyticscloud">SAP Analytics Cloud</a></li>
+                              <li><a href="https://bi-survey.com/product/sisense">Sisense</a></li>
+                              <li><a href="https://bi-survey.com/product/tableau">Tableau</a></li>
+                              <li><a href="https://bi-survey.com/product/targit">TARGIT</a></li>
+                            </ul>
+                          </div>
+
+                          <div class="tab-pane fade" id="datadisc" role="tabpanel">
+                            <h5>Data discovery-focused products</h5>
+
+                            <p>Includes products that focus on visual data discovery and advanced data visualization.</p>
+                            <ul>
+                              <li><a href="https://bi-survey.com/product/carriots-analytics-envision">Carriots Analytics (Envision)</a></li>
+                              <li><a href="https://bi-survey.com/product/dundas">Dundas BI</a></li>
+                              <li><a href="https://bi-survey.com/product/mspowerbi">Microsoft Power BI</a></li>
+                              <li><a href="https://bi-survey.com/product/phocas">Phocas</a></li>
+                              <li><a href="https://bi-survey.com/product/qliksense">Qlik Sense</a></li>
+                              <li><a href="https://bi-survey.com/product/qlikview">QlikView</a></li>
+                              <li><a href="https://bi-survey.com/product/sapanalyticscloud">SAP Analytics Cloud</a></li>
+                              <li><a href="https://bi-survey.com/product/sisense">Sisense</a></li>
+                              <li><a href="https://bi-survey.com/product/tableau">Tableau</a></li>
+                              <li><a href="https://bi-survey.com/product/yellowfin">Yellowfin</a></li>
+                            </ul>
+                          </div>
+
+                          <div class="tab-pane fade" id="embed" role="tabpanel">
+                            <h5>Embedded analytics-focused products</h5>
+
+                            <p>Includes reporting and analytics products that can be embedded in other business applications.</p>
+                            <ul>
+                              <li><a href="https://bi-survey.com/product/carriots-analytics-envision">Carriots Analytics</a></li>
+                              <li><a href="https://bi-survey.com/product/domo">Domo</a></li>
+                              <li><a href="https://bi-survey.com/product/dundas">Dundas BI</a></li>
+                              <li><a href="https://bi-survey.com/product/informationbuilders">Information Builders</a></li>
+                              <li><a href="https://bi-survey.com/product/looker">Looker</a></li>
+                              <li><a href="https://bi-survey.com/product/microsoft-power-bi">Microsoft Power BI</a></li>
+                              <li><a href="https://bi-survey.com/product/microstrategy">MicroStrategy</a></li>
+                              <li><a href="https://bi-survey.com/product/pyramid-analytics">Pyramid Analytics</a></li>
+                              <li><a href="https://bi-survey.com/product/qliksense">Qlik Sense</a></li>
+                              <li><a href="https://bi-survey.com/product/salesi">sales-i</a></li>
+                              <li><a href="https://bi-survey.com/product/sisense">Sisense</a></li>
+                              <li><a href="https://bi-survey.com/product/yellowfin">Yellowfin</a></li>
+                            </ul>
+                          </div>
+
+                          <div class="tab-pane fade" id="emea" role="tabpanel">
+                            <h5>EMEA-focused vendors</h5>
+
+                            <p>Includes products from vendors that have a significant presence in - and focus on - the EMEA region.</p>
+                            <ul>
+                              <li><a href="https://bi-survey.com/product/bissantz">Bissantz</a></li>
+                              <li><a href="https://bi-survey.com/product/board">BOARD</a></li>
+                              <li><a href="https://bi-survey.com/product/cubeware">Cubeware</a></li>
+                              <li><a href="https://bi-survey.com/product/cubus">cubus</a></li>
+                              <li><a href="https://bi-survey.com/product/jedoxbi">Jedox</a></li>
+                              <li><a href="https://bi-survey.com/product/arcplan-enterpriseedge">Longview Analytics</a></li>
+                              <li><a href="https://bi-survey.com/product/looker">Looker</a></li>
+                              <li><a href="https://bi-survey.com/product/pyramid-analytics">Pyramid Analytics</a></li>
+                              <li><a href="https://bi-survey.com/product/salesi">sales-i</a></li>
+                              <li><a href="https://bi-survey.com/product/targit">TARGIT</a></li>
+                              <li><a href="https://bi-survey.com/product/prevero-prevero">Unit4 prevero</a></li>
+                            </ul>
+                          </div>
+
+                          <div class="tab-pane fade" id="ipm" role="tabpanel">
+                            <h5>Integrated performance management products</h5>
+
+                            <p>Includes products that provide integrated functionality for BI and performance management, especially planning and budgeting.</p>
+                            <ul>
+                              <li><a href="https://bi-survey.com/product/bissantz">Bissantz</a></li>
                               <li><a href="https://bi-survey.com/product/board">BOARD</a></li>
                               <li><a href="https://bi-survey.com/product/calumo">CALUMO</a></li>
-                              <li><a href="https://bi-survey.com/product/carriots-analytics-envision">Carriots Analytics (Envision)</a></li>
-                              <li><a href="https://bi-survey.com/product/chartio">Chartio</a></li>
-                              <li><a href="https://bi-survey.com/product/cyberscience-cyberquery">Cyberquery</a></li>
-                              <li><a href="https://bi-survey.com/product/dimensional-insight">Diver Platform</a></li>
-                              <li><a href="https://bi-survey.com/product/domo">Domo</a></li>
-                              <li><a href="https://bi-survey.com/product/dundas">Dundas BI</a></li>
-                              <li><a href="https://bi-survey.com/product/entrinsik-informer">Entrinsik Informer</a></li>
-                              <li><a href="https://bi-survey.com/product/phocas">Phocas</a></li>
-                              <li><a href="https://bi-survey.com/product/sisense">Sisense</a></li>
-                              <li><a href="https://bi-survey.com/product/yellowfin">Yellowfin BI</a></li>
-                              <li><a href="https://bi-survey.com/product/zoho-reports">Zoho Reports</a></li>
+                              <li><a href="https://bi-survey.com/product/cubeware">Cubeware</a></li>
+                              <li><a href="https://bi-survey.com/product/cubus">cubus</a></li>
+                              <li><a href="https://bi-survey.com/product/ibm-cognos-tm1">IBM Planning Analytics</a></li>
+                              <li><a href="https://bi-survey.com/product/inforbi">Infor BI</a></li>
+                              <li><a href="https://bi-survey.com/product/jedoxbi">Jedox</a></li>
+                              <li><a href="https://bi-survey.com/product/arcplan-enterpriseedge">Longview Analytics</a></li>
+                              <li><a href="https://bi-survey.com/product/sapanalyticscloud">SAP Analytics Cloud</a></li>
+                              <li><a href="https://bi-survey.com/product/prevero-prevero">Unit4 prevero</a></li>
                             </ul>
                           </div>
-                          <div class="tab-pane fade" id="dolor" role="tabpanel">
-                            <h5>Enterprise software vendors</h5>
 
-                            <p>Enterprise software vendors have a broad portfolio including most (or all) types of business software.</p>
-                            <ul>
-                              <li><a href="https://bi-survey.com/product/pyramid-analytics">BI Office Suite</a></li>
-                              <li><a href="https://bi-survey.com/product/board">BOARD</a></li>
-                              <li><a href="https://bi-survey.com/product/calumo">CALUMO</a></li>
-                              <li><a href="https://bi-survey.com/product/carriots-analytics-envision">Carriots Analytics (Envision)</a></li>
-                              <li><a href="https://bi-survey.com/product/chartio">Chartio</a></li>
-                              <li><a href="https://bi-survey.com/product/cyberscience-cyberquery">Cyberquery</a></li>
-                              <li><a href="https://bi-survey.com/product/dimensional-insight">Diver Platform</a></li>
-                              <li><a href="https://bi-survey.com/product/domo">Domo</a></li>
-                              <li><a href="https://bi-survey.com/product/dundas">Dundas BI</a></li>
-                              <li><a href="https://bi-survey.com/product/entrinsik-informer">Entrinsik Informer</a></li>
-                              <li><a href="https://bi-survey.com/product/phocas">Phocas</a></li>
-                              <li><a href="https://bi-survey.com/product/sisense">Sisense</a></li>
-                              <li><a href="https://bi-survey.com/product/yellowfin">Yellowfin BI</a></li>
-                              <li><a href="https://bi-survey.com/product/zoho-reports">Zoho Reports</a></li>
-                            </ul>
-                          </div>
-                          <div class="tab-pane fade" id="sit-amet" role="tabpanel">
-                            <h5>Flexible planning platforms</h5>
+                          <div class="tab-pane fade" id="enter" role="tabpanel">
+                            <h5>Large enterprise BI platforms</h5>
 
-                            <p>Flexible planning platforms are most suitable for developing and implementing bespoke planning solutions to meet a unique set of requirements. They usually offer limited predefined content.</p>
+                            <p>Includes products equipped with functionality for enterprise deployments that focus on a broad range of BI use cases.</p>
                             <ul>
-                              <li><a href="https://bi-survey.com/product/pyramid-analytics">BI Office Suite</a></li>
-                              <li><a href="https://bi-survey.com/product/board">BOARD</a></li>
-                              <li><a href="https://bi-survey.com/product/calumo">CALUMO</a></li>
-                              <li><a href="https://bi-survey.com/product/carriots-analytics-envision">Carriots Analytics (Envision)</a></li>
-                              <li><a href="https://bi-survey.com/product/chartio">Chartio</a></li>
-                              <li><a href="https://bi-survey.com/product/cyberscience-cyberquery">Cyberquery</a></li>
-                              <li><a href="https://bi-survey.com/product/dimensional-insight">Diver Platform</a></li>
-                              <li><a href="https://bi-survey.com/product/domo">Domo</a></li>
-                              <li><a href="https://bi-survey.com/product/dundas">Dundas BI</a></li>
-                              <li><a href="https://bi-survey.com/product/entrinsik-informer">Entrinsik Informer</a></li>
-                              <li><a href="https://bi-survey.com/product/phocas">Phocas</a></li>
-                              <li><a href="https://bi-survey.com/product/sisense">Sisense</a></li>
-                              <li><a href="https://bi-survey.com/product/yellowfin">Yellowfin BI</a></li>
-                              <li><a href="https://bi-survey.com/product/zoho-reports">Zoho Reports</a></li>
+                              <li><a href="https://bi-survey.com/product/ibm-cognos-analytics">IBM Cognos Analytics</a></li>
+                              <li><a href="https://bi-survey.com/product/ibm-cognos-tm1">IBM Planning Analytics</a></li>
+                              <li><a href="https://bi-survey.com/product/informationbuilders">Information Builders</a></li>
+                              <li><a href="https://bi-survey.com/product/microsoft-ssrs">Microsoft SSRS</a></li>
+                              <li><a href="https://bi-survey.com/product/microstrategy">MicroStrategy</a></li>
+                              <li><a href="https://bi-survey.com/product/oraclebi">Oracle BI</a></li>
+                              <li><a href="https://bi-survey.com/product/jedoxbi">Jedox</a></li>
+                              <li><a href="https://bi-survey.com/product/sapbobi">SAP BO BI</a></li>
+                              <li><a href="https://bi-survey.com/product/SAS">SAS Enterprise BI</a></li>
                             </ul>
                           </div>
+
+                          <div class="tab-pane fade" id="inter" role="tabpanel">
+                            <h5>Large international BI vendors</h5>
+
+                            <p>Includes products equipped with functionality for enterprise deployments that focus on a broad range of BI use cases.</p>
+                            <ul>
+                              <li><a href="https://bi-survey.com/product/ibm-cognos-analytics">IBM Cognos Analytics</a></li>
+                              <li><a href="https://bi-survey.com/product/ibm-cognos-tm1">IBM Planning Analytics</a></li>
+                              <li><a href="https://bi-survey.com/product/inforbi">Infor BI</a></li>
+                              <li><a href="https://bi-survey.com/product/informationbuilders">Information Builders</a></li>
+                              <li><a href="https://bi-survey.com/product/microsoft-excel">Microsoft Excel</a></li>
+                              <li><a href="https://bi-survey.com/product/microsoft-power-bi">Microsoft Power BI</a></li>
+                              <li><a href="https://bi-survey.com/product/microsoft-ssrs">Microsoft SSRS</a></li>
+                              <li><a href="https://bi-survey.com/product/microstrategy">MicroStrategy</a></li>
+                              <li><a href="https://bi-survey.com/product/oraclebi">Oracle BI</a></li>
+                              <li><a href="https://bi-survey.com/product/qliksense">Qlik Sense</a></li>
+                              <li><a href="https://bi-survey.com/product/qlikview">QlikView</a></li>
+                              <li><a href="https://bi-survey.com/product/jedoxbi">Jedox</a></li>
+                              <li><a href="https://bi-survey.com/product/sapbobi">SAP BO BI</a></li>
+                              <li><a href="https://bi-survey.com/product/SAS">SAS Enterprise BI</a></li>
+                            </ul>
+                          </div>
+
+                          <div class="tab-pane fade" id="olap" role="tabpanel">
+                            <h5>OLAP analysis-focused products</h5>
+
+                              <p>Includes products that focus on analysis in dimensional and hierarchical data models.</p>
+                              <ul>
+                                <li><a href="https://bi-survey.com/product/bissantz">Bissantz</a></li>
+                                <li><a href="https://bi-survey.com/product/board">BOARD</a></li>
+                                <li><a href="https://bi-survey.com/product/calumo">CALUMO</a></li>
+                                <li><a href="https://bi-survey.com/product/cubeware">Cubeware</a></li>
+                                <li><a href="https://bi-survey.com/product/cubus">cubus</a></li>
+                                <li><a href="https://bi-survey.com/product/ibm-cognos-tm1">IBM Planning Analytics</a></li>
+                                <li><a href="https://bi-survey.com/product/inforbi">Infor BI</a></li>
+                                <li><a href="https://bi-survey.com/product/jedoxbi">Jedox</a></li>
+                              <li><a href="https://bi-survey.com/product/microsoft-excel">Microsoft Excel</a></li>
+                                <li><a href="https://bi-survey.com/product/pyramid-analytics">Pyramid Analytics</a></li>
+                                <li><a href="https://bi-survey.com/product/sapboanalysis">SAP BO Analysis</a></li>
+                                <li><a href="https://bi-survey.com/product/targit">TARGIT</a></li>
+                                  <li><a href="https://bi-survey.com/product/prevero-prevero">Unit4 prevero</a></li>
+
+                              </ul>
+                            </div>
+
+                            <div class="tab-pane fade" id="selfser" role="tabpanel">
+                              <h5>Self-service reporting-focused products</h5>
+
+                            <p>Includes products that focus on self-service reporting and ad hoc analysis.</p>
+                            <ul>
+                              <li><a href="https://bi-survey.com/product/bissantz">Bissantz</a></li>
+                              <li><a href="https://bi-survey.com/product/cubus">cubus</a></li>
+                              <li><a href="https://bi-survey.com/product/cyberscience-cyberquery">Cyberscience</a></li>
+                              <li><a href="https://bi-survey.com/product/dimensional-insight">Dimensional Insight</a></li>
+                              <li><a href="https://bi-survey.com/product/domo">Domo</a></li>
+                              <li><a href="https://bi-survey.com/product/looker">Looker</a></li>
+                              <li><a href="https://bi-survey.com/product/microsoft-power-bi">Microsoft Power BI</a></li>
+                              <li><a href="https://bi-survey.com/product/phocas">Phocas</a></li>
+                              <li><a href="https://bi-survey.com/product/pyramid-analytics">Pyramid Analytics</a></li>
+                              <li><a href="https://bi-survey.com/product/sapanalyticscloud">SAP Analytics Cloud</a></li>
+                              <li><a href="https://bi-survey.com/product/sapwebintelligence">SAP BO Webi</a></li>
+                              <li><a href="https://bi-survey.com/product/targit">TARGIT</a></li>
+                              <li><a href="https://bi-survey.com/product/yellowfin">Yellowfin</a></li>
+                            </ul>
+                          </div>
+
+
                         </div>
                       </div>
-
                     </div>
                   </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-		 <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-				         Products in the Survey
-				        </a>
-				      </h5>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                      <table class="table table-striped">
-                        <thead class="thead-light">
-                          <tr>
-                            <th>Product</th>
-                            <th>Number of answers</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Bissantz</td>
-                            <td>84</td>
-                          </tr>
-                          <tr>
-                            <td>BOARD</td>
-                            <td>51</td>
-                          </tr>
-                          <tr>
-                            <td>CALUMO</td>
-                            <td>49</td>
-                          </tr>
-                          <tr>
-                            <td>Chartio</td>
-                            <td>40</td>
-                          </tr>
-                          <tr>
-                            <td>Cubeware</td>
-                            <td>67</td>
-                          </tr>
-                          <tr>
-                            <td>cubus</td>
-                            <td>36</td>
-                          </tr>
-                          <tr>
-                            <td>CXO-Cockpit</td>
-                            <td>31</td>
-                          </tr>
-                          <tr>
-                            <td>Cyberscience</td>
-                            <td>41</td>
-                          </tr>
-                          <tr>
-                            <td>DigDash</td>
-                            <td>32</td>
-                          </tr>
-                          <tr>
-                            <td>Dimensional Insight</td>
-                            <td>38</td>
-                          </tr>
-                          <tr>
-                            <td>Domo</td>
-                            <td>30</td>
-                          </tr>
-                          <tr>
-                            <td>Dundas</td>
-                            <td>35</td>
-                          </tr>
-                          <tr>
-                            <td>Entrinsik</td>
-                            <td>58</td>
-                          </tr>
-                          <tr>
-                            <td>Carriots Analytics (Envision)</td>
-                            <td>32</td>
-                          </tr>
-                          <tr>
-                            <td>IBM Cog Analytics</td>
-                            <td>93</td>
-                          </tr>
-                          <tr>
-                            <td>IBM Plan Analytics</td>
-                            <td>32</td>
-                          </tr>
-                          <tr>
-                            <td>Infor</td>
-                            <td>45</td>
-                          </tr>
-                          <tr>
-                            <td>Information Builders</td>
-                            <td>33</td>
-                          </tr>
-                          <tr>
-                            <td>Jedox</td>
-                            <td>34</td>
-                          </tr>
-                          <tr>
-                            <td>Longview Analytics</td>
-                            <td>47</td>
-                          </tr>
-                          <tr>
-                            <td>MS Excel</td>
-                            <td>146</td>
-                          </tr>
-                          <tr>
-                            <td>MS Power BI</td>
-                            <td>109</td>
-                          </tr>
-                          <tr>
-                            <td>MS SSRS</td>
-                            <td>63</td>
-                          </tr>
-                          <tr>
-                            <td>MicroStrategy</td>
-                            <td>167</td>
-                          </tr>
-                          <tr>
-                            <td>Oracle BI</td>
-                            <td>35</td>
-                          </tr>
-                          <tr>
-                            <td>Phocas</td>
-                            <td>34</td>
-                          </tr>
-                          <tr>
-                            <td>MIK (prevero)</td>
-                            <td>37</td>
-                          </tr>
-                          <tr>
-                            <td>prevero (prevero)</td>
-                            <td>29</td>
-                          </tr>
-                          <tr>
-                            <td>Pyramid Analytics</td>
-                            <td>36</td>
-                          </tr>
-                          <tr>
-                            <td>Qlik Sense</td>
-                            <td>61</td>
-                          </tr>
-                          <tr>
-                            <td>QlikView</td>
-                            <td>236</td>
-                          </tr>
-                          <tr>
-                            <td>SAP BEx</td>
-                            <td>65</td>
-                          </tr>
-                          <tr>
-                            <td>SAP BO Analysis</td>
-                            <td>34</td>
-                          </tr>
-                          <tr>
-                            <td>SAP BO Design St.</td>
-                            <td>34</td>
-                          </tr>
-                          <tr>
-                            <td>SAP BO WebI</td>
-                            <td>76</td>
-                          </tr>
-                          <tr>
-                            <td>SAS Enterprise BI</td>
-                            <td>36</td>
-                          </tr>
-                          <tr>
-                            <td>Sisense</td>
-                            <td>38</td>
-                          </tr>
-                          <tr>
-                            <td>Tableau</td>
-                            <td>75</td>
-                          </tr>
-                          <tr>
-                            <td>TARGIT</td>
-                            <td>44</td>
-                          </tr>
-                          <tr>
-                            <td>TIBCO Spotfire</td>
-                            <td>27</td>
-                          </tr>
-                          <tr>
-                            <td>Yellowfin</td>
-                            <td>37</td>
-                          </tr>
-                          <tr>
-                            <td>Zoho Reports</td>
-                            <td>45</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingFour">
-                    <h5 class="mb-0">
-		 <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-								 KPI Grouping
-							 </a>
-							</h5>
-                  </div>
-                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                    <div class="card-body">
-                      <table class="table table-striped">
-                        <thead class="thead-light">
-                          <tr>
-                            <th width="216">Aggregated KPIs</th>
-                            <th width="364">Root KPIs</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td rowspan="3" width="181"><strong>Business value</strong></td>
-                            <td>Business benefits</td>
-                          </tr>
-                          <tr>
-                            <td>Project success</td>
-                          </tr>
-                          <tr>
-                            <td>Project length</td>
-                          </tr>
-                          <tr>
-                            <td></td>
-                            <td></td>
-                          </tr>
-                          <tr>
-                            <td rowspan="2" width="181"><strong>Competitiveness</strong></td>
-                            <td>Considered for purchase</td>
-                          </tr>
-                          <tr>
-                            <td>Competitive win rate</td>
-                          </tr>
-                          <tr>
-                            <td></td>
-                            <td></td>
-                          </tr>
-                          <tr>
-                            <td rowspan="10"><strong>User experience</strong></td>
-                            <td>Planning functionality</td>
-                          </tr>
-                          <tr>
-                            <td>Integrated planning</td>
-                          </tr>
-                          <tr>
-                            <td>Reporting/analysis functionality</td>
-                          </tr>
-                          <tr>
-                            <td>Flexibility</td>
-                          </tr>
-                          <tr>
-                            <td>Ease of use</td>
-                          </tr>
-                          <tr>
-                            <td>Self-service</td>
-                          </tr>
-                          <tr>
-                            <td>Predefined data connections</td>
-                          </tr>
-                          <tr>
-                            <td>Performance satisfaction</td>
-                          </tr>
-                          <tr>
-                            <td>Simulation &amp; scenario analysis</td>
-                          </tr>
-                          <tr>
-                            <td>Driver-based planning</td>
-                          </tr>
-                          <tr>
-                            <td></td>
-                            <td></td>
-                          </tr>
-                          <tr>
-                            <td rowspan="5" width="181"><strong>Customer satisfaction</strong></td>
-                            <td>Price-to-value</td>
-                          </tr>
-                          <tr>
-                            <td>Product satisfaction</td>
-                          </tr>
-                          <tr>
-                            <td>Vendor support</td>
-                          </tr>
-                          <tr>
-                            <td>Implementer support</td>
-                          </tr>
-                          <tr>
-                            <td>Recommendation</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="card">
-                  <div class="card-header" id="headingFive">
-                    <h5 class="mb-0">
-		 <a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-								 KPI Explanation
-							 </a>
-							</h5>
-                  </div>
-                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                    <div class="card-body">
-                      <table class="table table-striped">
-                        <thead class="thead-light">
-                          <tr>
-                            <th width="216">KPI</th>
-                            <th width="364">Short explanation</th>
-                          </tr>
-                        </thead>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+   <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+               Products in the Survey
+              </a>
+            </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                          <table class="table table-striped">
+                            <thead class="thead-light">
+                              <tr>
+                                <th>Product</th>
+                                <th>Number of answers</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Bissantz</td>
+                                <td>71</td>
+                              </tr>
+                              <tr>
+                                <td>BOARD</td>
+                                <td>49</td>
+                              </tr>
+                              <tr>
+                                <td>CALUMO</td>
+                                <td>67</td>
+                              </tr>
+                              <tr>
+                                <td>Carriots Analytics</td>
+                                <td>39</td>
+                              </tr>
+                              <tr>
+                                <td>Cubeware</td>
+                                <td>76</td>
+                              </tr>
+                              <tr>
+                                <td>cubus</td>
+                                <td>60</td>
+                              </tr>
+                              <tr>
+                                <td>Cyberscience</td>
+                                <td>30</td>
+                              </tr>
+                              <tr>
+                                <td>Dimensional Insight</td>
+                                <td>38</td>
+                              </tr>
+                              <tr>
+                                <td>Domo</td>
+                                <td>32</td>
+                              </tr>
+                              <tr>
+                                <td>Dundas</td>
+                                <td>30</td>
+                              </tr>
+                              <tr>
+                                <td>IBM Cognos Analytics</td>
+                                <td>92</td>
+                              </tr>
+                              <tr>
+                                <td>IBM Planning Analytics</td>
+                                <td>49</td>
+                              </tr>
+                              <tr>
+                                <td>Infor BI</td>
+                                <td>42</td>
+                              </tr>
+                              <tr>
+                                <td>Information Builders</td>
+                                <td>42</td>
+                              </tr>
+                              <tr>
+                                <td>Jedox</td>
+                                <td>47</td>
+                              </tr>
+                              <tr>
+                                <td>Longview Analytics</td>
+                                <td>68</td>
+                              </tr>
+                              <tr>
+                                <td>Looker</td>
+                                <td>35</td>
+                              </tr>
+                              <tr>
+                                <td>Microsoft Excel</td>
+                                <td>194</td>
+                              </tr>
+                              <tr>
+                                <td>Microsoft Power BI</td>
+                                <td>171</td>
+                              </tr>
+                              <tr>
+                                <td>Microsoft SSRS</td>
+                                <td>69</td>
+                              </tr>
+                              <tr>
+                                <td>MicroStrategy</td>
+                                <td>116</td>
+                              </tr>
+                              <tr>
+                                <td>Oracle BI</td>
+                                <td>32</td>
+                              </tr>
+                              <tr>
+                                <td>Phocas</td>
+                                <td>32</td>
+                              </tr>
+                              <tr>
+                                <td>Pyramid Analytics</td>
+                                <td>31</td>
+                              </tr>
+                              <tr>
+                                <td>Qlik Sense</td>
+                                <td>61</td>
+                              </tr>
+                              <tr>
+                                <td>QlikView</td>
+                                <td>200</td>
+                              </tr>
+                              <tr>
+                                <td>sales-i</td>
+                                <td>34</td>
+                              </tr>
+                              <tr>
+                                <td>SAP Analytics Cloud</td>
+                                <td>49</td>
+                              </tr>
+                              <tr>
+                                <td>SAP BO Analysis</td>
+                                <td>82</td>
+                              </tr>
+                              <tr>
+                                <td>SAP BO BI</td>
+                                <td>199</td>
+                              </tr>
+                              <tr>
+                                <td>SAP BO Web Intelligence</td>
+                                <td>88</td>
+                              </tr>
+                              <tr>
+                                <td>SAS Enterprise BI</td>
+                                <td>42</td>
+                              </tr>
+                              <tr>
+                                <td>Sisense</td>
+                                <td>39</td>
+                              </tr>
+                              <tr>
+                                <td>Tableau</td>
+                                <td>95</td>
+                              </tr>
+                              <tr>
+                                <td>TARGIT</td>
+                                <td>47</td>
+                              </tr>
+                              <tr>
+                                <td>Unit4 prevero</td>
+                                <td>38</td>
+                              </tr>
+                              <tr>
+                                <td>Yellowfin</td>
+                                <td>30</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+   <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+               KPI Grouping
+             </a>
+            </h5>
+                      </div>
+                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                          <table class="table table-striped">
+                            <thead class="thead-light">
+                              <tr>
+                                <th width="216">Aggregated KPIs</th>
+                                <th width="364">Root KPIs</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td rowspan="3" width="181"><strong>Business value</strong></td>
+                                <td>Business benefits</td>
+                              </tr>
+                              <tr>
+                                <td>Project success</td>
+                              </tr>
+                              <tr>
+                                <td>Project length</td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td rowspan="2" width="181"><strong>Competitiveness</strong></td>
+                                <td>Considered for purchase</td>
+                              </tr>
+                              <tr>
+                                <td>Competitive win rate</td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td rowspan="8"><strong>Customer experience</strong></td>
+                                <td>Planning functionality</td>
+                              </tr>
+                              <tr>
+                                <td>Self-service</td>
+                              </tr>
+                              <tr>
+                                <td>Flexibility</td>
+                              </tr>
+                              <tr>
+                                <td>Ease of use</td>
+                              </tr>
+                              <tr>
+                                <td>Sales experience</td>
+                              </tr>
+                              <tr>
+                                <td>Data volume</td>
+                              </tr>
+                              <tr>
+                                <td>Query performance</td>
+                              </tr>
+                              <tr>
+                                <td>Performance satisfaction</td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td rowspan="5" width="181"><strong>Customer satisfaction</strong></td>
+                                <td>Price-to-value</td>
+                              </tr>
+                              <tr>
+                                <td>Product satisfaction</td>
+                              </tr>
+                              <tr>
+                                <td>Vendor support</td>
+                              </tr>
+                              <tr>
+                                <td>Implementer support</td>
+                              </tr>
+                              <tr>
+                                <td>Recommendation</td>
+                              </tr>
+                              <tr>
+                                <td rowspan="8"><strong>Innovation</strong></td>
+                                <td>Cloud BI</td>
+                              </tr>
+                              <tr>
+                                <td>Mobile BI</td>
+                              </tr>
+                              <tr>
+                                <td>Operational BI</td>
+                              </tr>
+                              <tr>
+                                <td>Visual design standards</td>
+                              </tr>
+                              <tr>
+                                <td>Location intelligence</td>
+                              </tr>
+                              <tr>
+                                <td>Visual analysis</td>
+                              </tr>
+                              <tr>
+                                <td>Data preparation</td>
+                              </tr>
+                              <tr>
+                                <td>Embedded BI</td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
 
-                        <tbody>
-                          <tr>
-                            <td width="217">Business benefits</td>
-                            <td width="1027">This KPI is based on the achievement level of a variety of business benefits.</td>
-                          </tr>
-                          <tr>
-                            <td>Project success</td>
-                            <td>This KPI is based on the implementation satisfaction level and the frequency of projects completed on time and on budget.</td>
-                          </tr>
-                          <tr>
-                            <td>Project length</td>
-                            <td>This KPI is based on how quickly the product is implemented.</td>
-                          </tr>
-                          <tr>
-                            <td>Business value</td>
-                            <td>The KPI business value combines the ‘Business benefits’, ‘Project success’ and ‘Project length’ KPIs.</td>
-                          </tr>
-                          <tr>
-                            <td>Price-to-value</td>
-                            <td>This KPI is based on how users rate their BI tool in terms of price-to-value.</td>
-                          </tr>
-                          <tr>
-                            <td>Recommendation</td>
-                            <td>This KPI is based on how many users would recommend the product to others.</td>
-                          </tr>
-                          <tr>
-                            <td>Vendor support</td>
-                            <td>This KPI measures user satisfaction with the level of vendor support provided for the product.</td>
-                          </tr>
-                          <tr>
-                            <td>Implementer support</td>
-                            <td>This KPI measures user satisfaction with the level of the implementer’s support for the product.</td>
-                          </tr>
-                          <tr>
-                            <td>Product satisfaction</td>
-                            <td>This KPI is based on the frequency of problems encountered with the product.</td>
-                          </tr>
-                          <tr>
-                            <td>Customer satisfaction</td>
-                            <td>The KPI customer satisfaction combines the &#8216;Peice-to-value&#8217;, &#8216;Recommendation&#8217;, ‘Product satisfaction’, ‘Vendor support’ and ‘Implementer support’ KPIs.</td>
-                          </tr>
-                          <tr>
-                            <td>Self-service</td>
-                            <td>This KPI is based on how many sites currently use self-service features with their BI tool.</td>
-                          </tr>
-                          <tr>
-                            <td>Flexibility for the user</td>
-                            <td>This KPI is based on how often the product was chosen for its flexibility, and on the frequency of complaints about user flexibility post-implementation.</td>
-                          </tr>
-                          <tr>
-                            <td>Ease of use</td>
-                            <td>This KPI is based on how often the product was chosen for its ease of use, and on the level of complaints about ease of use post-implementation.</td>
-                          </tr>
-                          <tr>
-                            <td>Sales experience</td>
-                            <td>This KPI is based on how respondents rate the sales/purchasing experience with the vendor.</td>
-                          </tr>
-                          <tr>
-                            <td>Data volume</td>
-                            <td>This KPI is based on the median volume of data in databases used with the BI tool.</td>
-                          </tr>
-                          <tr>
-                            <td>Query performance</td>
-                            <td>This KPI is based on how quickly queries respond (adjusted by data volume).</td>
-                          </tr>
-                          <tr>
-                            <td>Performance satisfaction</td>
-                            <td>This KPI measures the frequency of complaints about the system’s performance.</td>
-                          </tr>
-                          <tr>
-                            <td>Customer experience</td>
-                            <td>The KPI customer satisfaction combines the ‘Ease of use’, ‘Self-service’, ‘Performance satisfaction’, ‘Flexibility for the user’, ‘Data volume’, ‘Query performance’ and ‘Sales experience‘ KPIs.</td>
-                          </tr>
-                          <tr>
-                            <td>Cloud BI</td>
-                            <td>This KPI is based on how many sites currently use the product in a cloud environment.</td>
-                          </tr>
-                          <tr>
-                            <td>Mobile BI</td>
-                            <td>This KPI is based on how many sites currently use mobile BI with their BI tool.</td>
-                          </tr>
-                          <tr>
-                            <td>Operational BI</td>
-                            <td>This KPI is based on how many sites currently use real-time data from transactional systems with their BI tool.</td>
-                          </tr>
-                          <tr>
-                            <td>Visual design standards</td>
-                            <td>This KPI is based on how many sites currently use visual design standards with their BI tool.</td>
-                          </tr>
-                          <tr>
-                            <td>Location intelligence</td>
-                            <td>This KPI is based on how many sites currently use spatial/location analysis with their BI tool.</td>
-                          </tr>
-                          <tr>
-                            <td>Visual analysis</td>
-                            <td>This KPI is based on how many sites currently use visual analysis with their BI tool.</td>
-                          </tr>
-                          <tr>
-                            <td>Embedded BI</td>
-                            <td>This KPI is based on how many survey respondents use embedded BI.</td>
-                          </tr>
-                          <tr>
-                            <td>Innovation</td>
-                            <td>The KPI innovation combines the ‘Embedded BI‘, ‘Cloud BI’, ‘Visual analysis‘, ‘Mobile BI’, ‘Operational BI‘, ‘Location intelligence‘ and ‘Visual design standards’ KPIs to measure the product’s level of innovation.</td>
-                          </tr>
-                          <tr>
-                            <td>Considered for purchase</td>
-                            <td>This KPI is based on whether respondents considered purchasing the product.</td>
-                          </tr>
-                          <tr>
-                            <td>Competitive win rate</td>
-                            <td>This KPI is based on the percentage of wins in competitive evaluations.</td>
-                          </tr>
-                          <tr>
-                            <td>Competitiveness</td>
-                            <td>The KPI competitiveness combines the ‘Considered for purchase’ and ‘Competitive win rate’ KPIs.</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <div class="card">
+                      <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+   <a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+               KPI Explanation
+             </a>
+            </h5>
+                      </div>
+                      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                          <table class="table table-striped">
+                            <thead class="thead-light">
+                              <tr>
+                                <th width="216">KPI</th>
+                                <th width="364">Short explanation</th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              <tr>
+                                <td width="217">Business benefits</td>
+                                <td width="1027">This KPI is based on the achievement level of a variety of business benefits.</td>
+                              </tr>
+                              <tr>
+                                <td>Project success</td>
+                                <td>This KPI is based on the implementation satisfaction level and the frequency of projects completed on time and on budget.</td>
+                              </tr>
+                              <tr>
+                                <td>Project length</td>
+                                <td>This KPI is based on how quickly the product is implemented.</td>
+                              </tr>
+                              <tr>
+                                <td>Business value</td>
+                                <td>This aggregated KPI combines the ‘Business benefits’, ‘Project success’ and ‘Project length’ KPIs.</td>
+                              </tr>
+                              <tr>
+                                <td>Price-to-value</td>
+                                <td>This KPI is based on how users rate their BI tool in terms of price-to-value.</td>
+                              </tr>
+                              <tr>
+                                <td>Recommendation</td>
+                                <td>This KPI is based on how many users would recommend the product to others.</td>
+                              </tr>
+                              <tr>
+                                <td>Vendor support</td>
+                                <td>This KPI measures user satisfaction with the level of vendor support provided for the product.</td>
+                              </tr>
+                              <tr>
+                                <td>Implementer support</td>
+                                <td>This KPI measures user satisfaction with the level of the implementer’s support for the product.</td>
+                              </tr>
+                              <tr>
+                                <td>Product satisfaction</td>
+                                <td>This KPI is based on the frequency of problems encountered with the product.</td>
+                              </tr>
+                              <tr>
+                                <td>Customer satisfaction</td>
+                                <td>This aggregated KPI combines the ‘Price-to-value’, ‘Recommendation’, ‘Product satisfaction’, ‘Vendor support’ and ‘Implementer support’ KPIs.</td>
+                              </tr>
+                              <tr>
+                                <td>Self-service</td>
+                                <td>This KPI is based on how many sites currently use self-service features with their BI tool.</td>
+                              </tr>
+                              <tr>
+                                <td>Flexibility</td>
+                                <td>This KPI is based on how often the product was chosen for its flexibility, and on the frequency of complaints about user flexibility post-implementation.</td>
+                              </tr>
+                              <tr>
+                                <td>Ease of use</td>
+                                <td>This KPI is based on how often the product was chosen for its ease of use, and on the level of complaints about ease of use post-implementation.</td>
+                              </tr>
+                              <tr>
+                                <td>Sales experience</td>
+                                <td>This KPI is based on how respondents rate the sales/purchasing experience with the vendor.</td>
+                              </tr>
+                              <tr>
+                                <td>Data volume</td>
+                                <td>This KPI is based on the median volume of data in databases used with the BI tool.</td>
+                              </tr>
+                              <tr>
+                                <td>Query performance</td>
+                                <td>This KPI is based on how quickly queries respond (adjusted by data volume).</td>
+                              </tr>
+                              <tr>
+                                <td>Performance satisfaction</td>
+                                <td>This KPI measures the frequency of complaints about the system’s performance.</td>
+                              </tr>
+                              <tr>
+                                <td>Customer experience</td>
+                                <td>This aggregated KPI combines the ‘Ease of use’, ‘Self-service’, ‘Performance satisfaction’, ‘Flexibility’, ‘Data volume’, ‘Query performance’ and ‘Sales experience‘ KPIs.</td>
+                              </tr>
+                              <tr>
+                                <td>Cloud BI</td>
+                                <td>This KPI is based on how many sites currently use the product in a cloud environment.</td>
+                              </tr>
+                              <tr>
+                                <td>Mobile BI</td>
+                                <td>This KPI is based on how many sites currently use mobile BI with their BI tool.</td>
+                              </tr>
+                              <tr>
+                                <td>Operational BI</td>
+                                <td>This KPI is based on how many sites currently use real-time data from transactional systems with their BI tool.</td>
+                              </tr>
+                              <tr>
+                                <td>Visual design standards</td>
+                                <td>This KPI is based on how many sites currently use visual design standards with their BI tool.</td>
+                              </tr>
+                              <tr>
+                                <td>Location intelligence</td>
+                                <td>This KPI is based on how many sites currently use spatial/location analysis with their BI tool.</td>
+                              </tr>
+                              <tr>
+                                <td>Visual analysis</td>
+                                <td>This KPI is based on how many sites currently use visual analysis with their BI tool.</td>
+                              </tr>
+                              <tr>
+                                <td>Data preparation</td>
+                                <td>This KPI is based on how many survey respondents use data preparation.</td>
+                              </tr>
+                              <tr>
+                                <td>Embedded BI</td>
+                                <td>This KPI is based on how many survey respondents use embedded BI.</td>
+                              </tr>
+                              <tr>
+                                <td>Innovation</td>
+                                <td>This aggregated KPI combines the ‘Embedded BI‘, ‘Cloud BI’, ‘Visual analysis‘, ‘Mobile BI’, ‘Operational BI‘, ‘Location intelligence‘ and ‘Visual design standards’ KPIs to measure the product’s level of innovation.</td>
+                              </tr>
+                              <tr>
+                                <td>Considered for purchase</td>
+                                <td>This KPI is based on whether respondents considered purchasing the product.</td>
+                              </tr>
+                              <tr>
+                                <td>Competitive win rate</td>
+                                <td>This KPI is based on the percentage of wins in competitive evaluations.</td>
+                              </tr>
+                              <tr>
+                                <td>Competitiveness</td>
+                                <td>This aggregated KPI combines the ‘Considered for purchase’ and ‘Competitive win rate’ KPIs.</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
